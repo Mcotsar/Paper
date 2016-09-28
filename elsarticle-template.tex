@@ -1,5 +1,5 @@
 
-\documentclass[review, twocolumn]{elsarticle}
+\documentclass[review]{elsarticle}
 
 \usepackage{lineno,hyperref}
 \modulolinenumbers[5]
@@ -119,7 +119,7 @@ The demand is also showed by the fact that amphorae Dressel 20 were identified w
 We analyse a dataset of 470 amphorae collected from 5 different workshops excavated. 
 The workshops were located in Malpica (Palma del R\'io, C\'ordoba), Cerro del Bel\'en (Palma del R\'io, C\'ordoba), Parlamento (Sevilla), Villaseca (C\'ordoba) and Las Delicias (\'Ecija, Sevilla). We created a dataset where were selected 80-100 samples of each pottery workshops. The choice of these workshops corresponded to several reasons. Firstly, the workshops were selected from different spaces in order to analyse the production patterns depending on the distance of each workshop. Secondly, the extended chronology of these workshops serves as proxy to examine changes on the variation shape. Finally, the workshops selected were open excavated and provided a large number of materials.   
 
-(hablar de que no han cambiado en tres siglos??)
+%(hablar de que no han cambiado en tres siglos??)
 
 
 \subsection{Field methods}
@@ -133,46 +133,50 @@ In our study, we have only selected five variants according with three centuries
 
 Finally, the sample selected were tested using statistical method such as Principal Component Analysis and Discriminant Analysis to explore these metrical differences. 
  
-- varianza de clasificaciones que hay? 
+%varianza de clasificaciones que hay? 
 
 \subsection{Principal Component Analysis}
 
-PCA (podría poner biblio de Shennan y el de Jollife (2002) de Principal Component Analysis)
+%%PCA (podría poner biblio de Shennan y el de Jollife (2002) de Principal Component Analysis)
 
-We used Principal Component Analysis (PCA) to simplify a large number of variables into a smaller number of variables. This method allows to create a reduced number of "new variables" which contain all the relevant information of the previous variables without losing relevance. The firsts principal components are expressed as the result of the most variance of the all information from the original variables.  
+We used Principal Component Analysis (PCA) to simplify a large number of variables into a smaller number of variables. This method allows to create a reduced number of \textit{new variables} which contain all the relevant information of the previous variables without losing relevance. The firsts principal components are expressed as the result of the most variance of the all information from the original variables.  
 The information is expressed as the result of most variation retained in the first principal components. (Jollife, 2002)
-In our study, this method allowed us to reduce our dataset with 8 variables as measurement into 2 variables. 
+In our study, this method allowed us to reduce our dataset of 8 measurements as variables into 2 variables. 
+
+%EXPLICAR UN POCO EL POR QUÉ, NO MIARMA?
 
 \subsection{Discriminant Linear Analysis} 
 
 
-The performed results with PCA were analyze with Lineal Discriminant Analyse (LDA). LDA was used to find a combination among them to define the groups as well as possible. In spite of being similar to PCA, LDA allows to identify and discriminate the variables which allow to distinguish each group and know how many variables are necessary. In our case, LDA was used to explore a better separate training set from the results of the most relevant principal components. 
+The performed results with PCA were analysed with Lineal Discriminant Analyse (LDA). LDA was used to find significant differences among workshops by the combination among variables obtained for the first principal components. In spite of being similar to PCA, LDA identifies which variables allow to distinguish or discriminate each group and how many variables are necessary to achieve the best combination as possible. In our case, LDA was used to explore a better separate training set from the results of the most relevant principal components. 
 
-All data were collected and performed in LibreOffice 4.2.8.2 and analysed in R version 3.2.4. statistical language, using packages MASS (COMPLETAR)
+Data were collected and performed in LibreOffice 4.2.8.2 and analysed in R version 3.2.4. statistical language and implemented with the package MASS. 
 
 
 \section{Results}
 
-Several multivariate methods such as PCA and DLA were used to quantify the differences on the pattern production among workshops. 5 workshops were chosen, following criteria described above. 
+Several multivariate methods such as PCA and DLA were used to quantify the technical differences on the pattern production among workshops. 5 workshops were chosen  following criteria described above. 
+
+%cambiar
 
 \subsection{Principal Component Analysis}
 
-The analysis of PCA produces a set of values for each variable observed. Variables show how much variability exists in the dataset grouped by each principal components. The results, indicated in the Table, show most variability in the firsts principal components than the rest (mostrar el que más con el analisis).The most differences were focus on the (poner donde más estuvieron enfocadas)
+The analysis of PCA produces a set of values for each variable observed. Variables show how much variability exist in the dataset grouped by each principal components. The results, indicated in the Table, show most variability in the firsts principal components than the rest (mostrar el que más con el analisis).The most differences were focused on the (poner donde más estuvieron enfocadas)
 
-The patterns observed in the first 2 Principal Components were plotted to visualize the degree of isolation among workshops. The results, shown in Fig., suggested than amphorae from closer workshops tend to be more similar than amphorae made in furthest workshops. In particular, the Fig illustrates how the four closest workshops show variation on PC1 (i.e. Belén, Delicias, Villaseca and Malpica) while Parlamento display a distinctive pattern than the rest of workshops on PC2 values. 
+The patterns observed in the first 2 Principal Components were plotted to visualize the degree of variation by isolation among workshops. The results, shown in Fig., suggested than amphorae from closer workshops tend to be more similar than amphorae made in furthest workshops. In particular, the Fig illustrates how the four closest workshops show variation on PC1 (i.e. Belén, Delicias, Villaseca and Malpica) while Parlamento displays a distinctive pattern than the rest of workshops on PC2 values. 
 
 
 \subsection{Discriminant Analysis}
 
-Tengo que decir que uso principales componentes antes que analisis discriminante para hacer un trainning 
+%Tengo que decir que uso principales componentes antes que analisis discriminante para hacer un trainning 
 
-Discriminant Analysis was used to interpret the results of the PCA. We generate a Confusion Matrix to quantify the degree of confusion among workshops. It generates a matrix where higher value are the results of an incorrect classification. 
-
-
+Discriminant Analysis was used to perform the results of the PCA. We generate a Confusion Matrix (CM) to quantify the degree of confusion among workshops. CM calculated the probability of success and error of the results. It generates a matrix where higher value are the results of an incorrect classification. 
 
 
 
-The results of Confusion Matrix showed than workshops with more troubles to be distinguished such Malpica and Belén shared a minor spatial distance than the rest (see Fig). Therefore, in our study, similar amphorae making techniques processes are strongly correlated with the spatial distance. 
+
+
+The results of Confusion Matrix showed than workshops with more troubles to be distinguished such Malpica and Bel\'en shared a minor spatial distance than the rest (see Fig). Therefore, in our study, similar amphorae making techniques processes are strongly correlated with the spatial distance. 
 
 \subsection{Spatial Analysis}
 
