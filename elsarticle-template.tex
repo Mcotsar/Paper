@@ -1,7 +1,11 @@
 
 \documentclass[review]{elsarticle}
 \usepackage{hyperref,lineno}
+\usepackage{xcolor}
 \modulolinenumbers[5]
+
+\newcommand{\memo}[2]{\textcolor{#1}{#2}}
+\newcommand{\xavi}[1]{\memo{orange}{xavi: #1\\}}
 
 \journal{Journal of \LaTeX\ Templates}
 
@@ -101,18 +105,28 @@ Cultural Evolution, Roman Empire, amphorae production, social learning
 
 \section{Introduction}
 
+\xavi{Comentario general: por que cada frase la has puesto en un paragrafo distinto? Cada paragrafo deberia ser un tema y no una frase. Y deberias usar el concepto de topic sentence (la primera frase del paragrafo resume el paragrafo).}
 
-Material culture variability allows to understand a part of the mechanism of the human behaviour \citep{basalla1988evolution}. Dynamic of changes on the material culture have been analized by the study of cultural pattern which varying over time and space \citep{eerkens_jelmer_cultural_2007, lycett_cultural_2015} %incluir bibliografía mesoudi y schillinger jas, mesoudi, etc lycett).
+Material culture variability allows to understand a part of the mechanism of the human behaviour \citep{basalla1988evolution}. Dynamic of changes on the material culture have been analized by the study of cultural pattern which varying over time and space \citep{eerkens_jelmer_cultural_2007, lycett_cultural_2015} %incluir bibliografía mesoudi y schillinger jas, mesoudi, etc lycett)
+
+\xavi{Esto va al JAS no? La primera frase deberia tener un tono mas arqueologico.}
 
 In the case of archaeology, the detection of visible differences in artefact production in the archaeological records could also explain whether these change are produced by cultural reasons or not based on economical, political and social changes %(meter mesoudi con shilinger other paper).
 
-Artefact techniques are socially transmitted by the interaction among individuals.
+\xavi{que quieres decir con visible? Y como lo haces visible? Citation needed}
+
+
+Artefact techniques are socially transmitted by the interaction among individuals. \xavi{que son artefact techniques? Ademas, creo que esta intro es demasiado general...los lectores del JAS ya saben que la gente aprende a hacer ceramica no?}
 This mode of learning transmission and several external conditions might affect directly or indirectly the pattern of manufacturing of the artefacts. Different information are shared by social learning generating an accumulation of knowledges which are transmitted from generation to generations in different context and content conditions  \citep{eerkens_jelmer_cultural_2005, neff1992ceramics,henrich_evolution_2003, boyd_cultural_2011}. 
 
+\xavi{Esta frase no dice realmente nada no? Debes ser mas concreta y concisa en lo que quieres transmitir. Dando la vuelta al tema, podrias estructurar el mismo contenido asi: 1. la cultural material que los arqueologos encuentran esta basada siempre en social learning, 2. la arqueologia evolutva analiza el proceso para saber que tipo de social learning se esta usando, 3. la mayoria de estudios se centran en ceramica hecha a mano y variaciones estilisticas 4. creemos que este framework es aplicable a otros contextos y objetivos, como entender los procesos masivos de produccion de amforas en el imperio romano}
+
 Therefore the variation in the material culture will depend on a series of cumulative strategies such as knowledge and interaction of community of producers, velocity of production, technology skills applied, type of transmissions and other factors among others %meter bibliografía (meter cavalli and sforza??)
+\xavi{esta frase casi repite la anterior}
 
 %Incluir por el contrario de la tesis (horizontal transmission)
 In archaeology, this connection processes have been also influenced by the geographical space related to isolation-by-distance \citep{bjorklund_effect_2010,shennan_isolation-by-distance_2015, van_strien_isolation-by-distance_2015}. Thereby artefact variation might be affected by geographical distance where material culture is more similar in close population who interacted each other. In other case, the correlation between both seems not visible due to different factors \citep{hart_effects_2012}. 
+\xavi{no creo que debas introducir aqui isolation-by-distance. Por otra parte, no solo es en arqueologia no? Ni tan siquiera evolucion cultural, sino que es algo general en procesos evolutivos.}
 
 However, different debates revolve around how individuals or groups acquired and transmitted techniques skills and the different modes of transmission   \citep{bowser_learning_2008, mesoudi_cultural_2008, roux_standardization_2015}.In  addition, this challenge is combined with the difficulty detecting the different modes of transmission in the archaeological record.     
 
@@ -125,92 +139,122 @@ However, different debates revolve around how individuals or groups acquired and
 
 %más especificamente
 This paper explores the changes in the production processes during the Roman Empire. Our study is focused on understanding the pottery-making techniques by analyzing large-scale amphorae production. We study the implication that this production might have on the evolution of social learning of potters. In our case, we can detect measurable differences among this type of amphorae correlated with the geographical distance. 
+\xavi{Este es el tema principal del paper; deberia ser explicitado antes y un poco mas detallado: 1. queremos entender los procesos productivos del imperio romano, 2. en concreto, la produccion en masa de anforas, 3. la aplicacion de un framework evolutivo nos permitira identificar que tipo de social learning esta envuelto.}
+
 
 Specifically, the aim of this study is understanding if pottery-making techniques were transmitted through vertical or horizontal social learning. Our main hypothesis concerns the transmission of the techniques by vertical transmission and how vertical transmission is spreading in time and space. These technological knowledges could have been transmitted from master to disciple and thus continuously. If vertical transmission predominates in this process over horizontal transmission then amphorae made in nearby workshops might share more similar traits than amphorae made from farthest workshop. Otherwise whether horizontal transmission is the main transmission in this process the social learning would be transmitted by workers. Then there would not be differences among workshops on the production.     
 
+\xavi{este parrafo guai, pero es aqui donde deberias hablar de isolation by distance como el concepto por el cual puedes identificar que tipo de social learning esta dominando el proceso}
+
 In our case, the existence of a correlation between spatial distance and morphometric variation will be tested by observing. In this work we have explored the social learning processes associated with amphorae production through a combination of empirical analysis and multivariate methods. 
 
+\xavi{by observing que? Por otra parte, el ultimo parrafo de la intro siempre resume el contenido del paper (next section will define the case study and existing hypotheses, the third one will deal with the methods...blablabla}
 
 \section{Background}
 
 \subsection{Study area}
 
-Our principal case study examines the variation of the amphorae production located in \emph{Baetica} (currently Andalusia, south Spain). During the Roman Empire, this ancient province became an important support for the production and distribution of  olive oil to the rest of the Empire from Ist to IIIrd centuries \cite{rodriguez_baetican_1998}. For this reason, a large-scale infrastructure of amphorae production was developed around this area to supply the provinces of the Roman Empire with a huge impact during military campaigns \citep{monfort_britannia_1998}.  
-\emph{Baetica} had also a strong connection thought rivers that allowed developing an important trade network around the Mediterranean \citep{garcia_vargas_enrique_formal_2010}. As result of this increase, more than 80 pottery workshops were currently located along the Guadalquivir river and its tributaries. (Fig). However all the sites examined have currently experimented multiples geographic transformations due to the anthropic action and the dynamic of the rivers (Enrique y Remesal). 
+\xavi{Our principal? Por otra parte, no hace falta subsection aqui creo...y Background deberia ser "Case Study" o "The amphoric production in Roman Betica" o algo asi.}
+
+Our principal case study examines the variation of the amphorae production located in \emph{Baetica} (currently Andalusia, south Spain). During the Roman Empire, this ancient province became an important support for the production and distribution of olive oil to the rest of the Empire from Ist to IIIrd centuries \cite{rodriguez_baetican_1998}. \xavi{puedes poner aqui un par de citas mas del tema, aparte de reme?} For this reason, a large-scale infrastructure of amphorae production was developed around this area to supply the provinces of the Roman Empire with a huge impact during military campaigns \citep{monfort_britannia_1998}. 
+
+\xavi{Por que citas aqui el tema de las campanyas? No seria mejor mencionar el abastecimiento de Roma y a las legiones? No hace falta que sean campanyas, vaya.}
+
+\emph{Baetica} had also a strong connection thought rivers that allowed developing an important trade network around the Mediterranean \citep{garcia_vargas_enrique_formal_2010}. \xavi{mediterranean? Si esta chapter book (al que le falta las pp) va del atlantico no?}As result of this increase, more than 80 pottery workshops were currently located along the Guadalquivir river and its tributaries. (Fig)\xavi{Ande estan las figuras?}. However all the sites examined have currently experimented multiples geographic transformations due to the anthropic action and the dynamic of the rivers (Enrique y Remesal)\xavi{CITATION NEEDED. Ademas, por que es relevante aqui esto de la antropizacion del territorio?}. 
 
 %Most of workshops were located on the margen izquierdo of the guadalquivir...
 
-The majority of amphorae identified in this area belong to \emph{Dressel 20} typology divided into different sub-typologies \citep{berni_millet_epigrafianforica_2008, martin-kilcher_romischen_1994}. This amphora type was used mostly to transport olive oil for around 300 years in order to satisfy the demand within Roman Empire \citep{rodriguez_economioleicola_1977}. In particular, olive oil was a significant product frequently related in different aspect of the roman daily life such as consumption, lighting and hygiene %Temin?.
+The majority of amphorae identified in this area belong to \emph{Dressel 20} typology divided into different sub-typologies \citep{berni_millet_epigrafianforica_2008, martin-kilcher_romischen_1994}\xavi{identificadas aqui? o producidas aqui? por otra parte, yo quitaria lo de las subtipologias.}. This amphora type was used mostly to transport olive oil for around 300 years in order to satisfy the demand within Roman Empire \citep{rodriguez_economioleicola_1977}. In particular, olive oil was a significant product frequently related in different aspect of the roman daily life such as consumption, lighting and hygiene %Temin?.
+\xavi{CITATION NEEDED}
 
 
 %hablar de un comercio diferente, que no ha experimentado cambios a lo largo de tres siglos?? del comercio en esa zona de aceite
 
 %The high demand is also showed by the fact that amphorae Dressel 20 were identified with several marks about its provenance (remesal and xavi). However, the meaning of the stamps seems not clear: it could be an agent identified as a olive oil producer or an agent identified as a potter factory. In any case, this paper will be only focused on the study of evolution of the amphorae (Rubio, Remesal sellos). debería incluirlo? 
 
+\xavi{faltaria acabar esta seccion con una discusion del problema que quieres resolver, incluyendo la pregunta de como se organizaban los talleres, que hipotesis hay y como liga esto con lo que has explicado de social learning.}
+
 \section{Material and methods}
+
+\xavi{Es mejor si empiezas con el metodo aqui; si no, el lector no entiende de lo que estas hablando.}
 
 We analyse a dataset of 470 amphorae collected from 5 different workshops excavated. The workshops were located in Malpica (Palma del R\'io, C\'ordoba), Cerro del Bel\'en (Palma del R\'io, C\'ordoba) \citep{diaz_trujillo_excavacion_1992}, Parlamento (Sevilla) \citep{garcia_vargas_anforas_2000}, Villaseca (C\'ordoba)\citep{garcia_vargas_enrique_excavacion_????} and Las Delicias (\'Ecija, Sevilla) \citep{fernandez_excavacion_2001,_atelier_2014}. We created a dataset where were selected 80-100 samples of each pottery workshops. The choice of these workshops corresponded to several reasons. Firstly, the workshops were selected from different spaces in order to analyse the production patterns depending on the distance of each workshop. Secondly, the extended chronology of these workshops serves as proxy to examine changes on the variation shape. In our case, the type Dressel 20 did not experimented especially visible changes on the production pattern during three centuries.%citar berni?
 Finally, the workshops selected were open excavated and provided a large number of materials.   
 
+xavi{Mapa?}
 
 \subsection{Field methods}
 
+\xavi{Esta subsection sigue hablando del dataset, asi que deberian ir junto con lo de antes.}
 
-Eight different measurements were taken for each amphorae sample of the 5 workshops studied. The measurements were done by one person using different tools: caliber, square and bevel to take the measurements and profile gauge to draw the pottery shapes. 
+Eight different measurements were taken for each amphorae sample of the 5 workshops studied. The measurements were done by one person using different tools: caliber, square and bevel to take the measurements and profile gauge to draw the pottery shapes. \xavi{no necesitas especificar esto...yo quitaria la ultima frase}
 
-The measurements were focused on the rim sherds whose fragments were the most preserved on the archaeological sample. In the case of pottery attributes, rim sherds work as an useful indicator of variability. Moreover, the measurements were divided into exterior diameter, inside diameter, rim height, rim width, shape width, rim inside height, rim width and protruding rim (Fig). We excluded other measurements such as handles and bases from our study due to the lack of these in the sample.    
+The measurements were focused on the rim sherds whose fragments were the most preserved on the archaeological sample. In the case of pottery attributes, rim sherds work as an useful indicator of variability. \xavi{why? esto lo sabias a priori? si es asi, citation needed.} Moreover, the measurements were divided into exterior diameter, inside diameter, rim height, rim width, shape width, rim inside height, rim width and protruding rim (Fig). We excluded other measurements such as handles and bases from our study due to the lack of these in the sample. \xavi{the method requires a large sample size and for this reason we focused on rim sherds. Other significative parts such as handles and bases are found in lesser quantities thus compromising the applicability of the method due to small sample size.}
 
 In our study, we have selected five variants according with three centuries
 (Dressel B: I; Dressel C: I-II; Dressel D: II; Dressel E: III, Dressel F: III) defined by P. Berni \citep{berni_millet_epigrafianforica_2008} and Martin Kilcher \citep{martin-kilcher_romischen_1994}. Specifically differences between variants are identified on the rim sherds and handles. For the proposal of this study, the rest of variants were not taken into account from our study by not having enough material for the analysis. 
 
+\xavi{Expande esto; estas variantes tienen que ver con datacion relativa? area? Por otra parte, deberias especificar que todas las amforas fueron encontradas en los talleres, y por eso se sabe que fueron fabricadas alli.}
+
 Finally, the sample selected were tested using statistical method such as Principal Component Analysis and Discriminant Analysis to explore these metrical differences on the rim sherds. 
- 
+
+\xavi{Esta frase debe ir en una seccion nueva. El primer parrafo dice que quieres detectar diferencias morfometricas entre las amforas de la misma variante fabricadas en cada taller, y para eso PCA para reducir dimensiones y DA para identificar similitud.}
 
 \subsection{Principal Component Analysis}
 
+\xavi{Es mas correcto hablar de "reducir la dimensionalidad" en lugar del numero de variables. Por otra parte, no se si hace falta detallar tanto PCA...mira otros papers similares usando PCA y veras que es tan comun que no hace falta definir mucho (quizas solo especifica la primera frase, y que es comun en arqueo como las obras citadas abajo).}
 
 We used Principal Component Analysis (PCA) to simplify a large number of variables into a smaller number of variables. This method allows to create a reduced number of \textit{new variables} which contain all the relevant information of the previous variables without losing relevance. The firsts principal components are expressed as the result of the most variance of the all information from the original variables. Moreover the information is expressed as the result of most variation retained in the first principal components \citep{jolliffe_principal_2002, shennan_quantifying_1997}. 
 This method is commonly used in archaeology for the study of the variation of material culture \citep{li_crossbows_2014, schillinger_differences_2016} 
 In our study, this method allowed us to reduce our dataset of 8 measurements as variables into 2 variables. 
 
+\xavi{Nope, al aplicar PCA transformas tus medidas en PCs, y eliges los 2 primeros porque capturan la variabilidad del dataset (y una figura no iria mas con eso)}
 %Explico una introducción y un poco de desarrollo con ejemplos. ¿tendría que desarrollarlo más?
 
 \subsection{Discriminant Linear Analysis} 
 
 
-The performed results with PCA were analysed with Lineal Discriminant Analyse (LDA). LDA was used to find significant differences among workshops by the combination among variables obtained for the first principal components. In spite of being similar to PCA, LDA identifies which variables allow to distinguish or discriminate each group and how many variables are necessary to achieve the best combination as possible. As example, this method has been used for a similar study about the production pottery in \emph{Tarraconense}. LDA allowed to demonstrate the correlation between spatial distance and distance among workshops \citep{i_martin_alisis_1998}. In our case, LDA was used to explore a better separate training set from the results of the most relevant principal components. 
+The performed results with PCA were analysed with Lineal Discriminant Analyse (LDA). LDA was used to find significant differences among workshops by the combination among variables obtained for the first principal components. In spite of being similar to PCA, LDA identifies which variables allow to distinguish or discriminate each group and how many variables are necessary to achieve the best combination as possible. As example, this method has been used for a similar study about the production pottery in \emph{Tarraconense}\xavi{Alerta! DA no es similar en nada a PCA. PCA te ayuda a reducir y visualizar las dimensiones; DA clasifica las amforas en grupos basandose en los PCs!}. LDA allowed to demonstrate the correlation between spatial distance and distance among workshops \citep{i_martin_alisis_1998}. In our case, LDA was used to explore a better separate training set from the results of the most relevant principal components.\xavi{mm no me motiva, parece que aguilera sea el unico que ha usado DA en arqueologia. Este parrafo deberia ser paralelo al anterior: describes la tecnica y lo que es, y despues dices que se ha usado antes en arqueologia con 3 o 4 ejemplos.} 
 
+
+\xavi{Faltan 2 pasos aqui. Primero, la parte innovadora es que usas el DA para generar una confusion matrix, y esta confusion matrix es lo que usas como indice de similitud entre talleres. Segundo, comparas esta distancia surgida del DA con la distancia espacial para ver si tienes correlacion entre distancia espacial y distancia morfometrica (y por tanto isolation by distane)}
 
 %dejar al final o en agradecimientos? 
-Data were collected and performed in LibreOffice 4.2.8.2 and analysed in R version 3.2.4. statistical language and implemented with the package MASS. 
+Data were collected and performed in LibreOffice 4.2.8.2 and analysed in R version 3.2.4. statistical language and implemented with the package MASS.\xavi{CITATION NEEDED. Y lo pondria en agradecimientos probablemente junto con la URL a los datos y al codigo (y no hace falta menciones libreoffice, solo lo que se requiere para el analisis)}
 
 \section{Results}
 
 Several multivariate methods such as PCA and LDA were used to quantify the technical differences on the pattern production among workshops. 5 workshops were chosen following criteria described above. 
 
+\xavi{esta frase no funciona aqui, puedes empezar directamente con el PCA (y quizas no hace falta separarlo)}
 
 \subsection{Principal Component Analysis}
 
 The analysis of PCA produces a set of values for each variable observed. Variables show how much variability exist in the dataset grouped by each principal components. The results, indicated in the Table, show most variability in the firsts principal components than the rest (mostrar el que más con el analisis).
 The most differences were focused on the %(poner donde más estuvieron enfocadas)
+\xavi{Table o Figure?}    
 
 The patterns observed in the first 2 Principal Components were plotted to visualize the degree of variation by isolation among workshops. The results, shown in Fig., suggested than amphorae from closer workshops tend to be more similar than amphorae made in furthest workshops. In particular, the Fig illustrates how the four closest workshops show variation on PC1 (i.e. Belén, Delicias, Villaseca and Malpica) while Parlamento displays a distinctive pattern than the rest of workshops on PC2 values. 
-
+\xavi{que pattern? esto es parte resultados parte discussion, asi que quizas deberias unir las 2 secciones}
 
 \subsection{Discriminant Analysis}
 
 %Tengo que decir que uso principales componentes antes que analisis discriminante para hacer un training, cómo enfocarlo? 
 
-Discriminant Analysis was used to perform the results obtained from PCA. We generate a Confusion Matrix (CM) to quantify the degree of confusion among workshops. CM calculated the probability of success and error of the results. It generates a matrix where higher value are the results of an incorrect classification. 
+Discriminant Analysis was used to perform the results obtained from PCA. \xavi{was used to perform? No se entiende}. We generate a Confusion Matrix (CM) to quantify the degree of confusion among workshops. CM calculated the probability of success and error of the results. It generates a matrix where higher value are the results of an incorrect classification. 
 %completar el por qué
+\xavi{mover a methods y comentar por que lo usas.}
 
 The results of Confusion Matrix showed than workshops with more troubles to be distinguished such Malpica and Bel\'en shared a minor spatial distance than the rest (see Fig). Therefore, similar amphorae making techniques processes were strongly correlated with the spatial distance. 
-
+\xavi{distance matrix?}
 
 \subsection{Correlation between distance and morphometric}
 %no me gusta mucho el título pero no sé qué ponerle :S
 
 We compared morphometric and spatial distance by performing peer-to-peer analysis between all workshops. We calculated the geographical distance between each site and the distance among pottery measures, calculated using the previous results. (FIG) shows that the pottery distance is strongly correlated with the spatial distance of workshops.
+
+
+\xavi{Como decia yo quitaria las subsection. Y si hablas de correlacion deberias cuantificarla (lo miramos cuando este el paper en un segundo draft)}
 
 %Desarrollar y decir cual está más cerca de quien y el bug que hay
 
@@ -221,16 +265,16 @@ Thus, the results suggest a variability on the making-techniques processes might
 \section{Discussion and Conclusion}
 
 
-Differences on the making techniques processes among workshops were identified using empirical method and multivariate analysis. The results show the variability could be affected by the distance. The analysed morphometric traits suggest that the similarity between amphorae decrease with the spatial distance between the workshops where they were produced. As result, amphorae made in nearby workshops with a minor spatial distance share more traits than amphorae made in pottery workshops furthest. In other words, the variability on the making techniques processes between closer workshops was difficult to differentiate. In our case, Malpica and Bel\'en workshops where the geographical proximity are the closest shared more traits in comparison with other workshops (Parlamento and Las Delicias). Thus the probability of interaction between workshops is increasing when the proximity is closest while this likelihood decreases when the possibility of interaction is low. 
+Differences on the making techniques processes among workshops were identified using empirical method and multivariate analysis. \xavi{Esta primera frase es redundante (si el lector ha llegado aqui ya lo sabe} The results show the variability could be affected by the distance. \xavi{could be? o is correlated with spatial distance?} The analysed morphometric traits suggest that the similarity between amphorae decrease with the spatial distance between the workshops where they were produced. As result, amphorae made in nearby workshops with a minor spatial distance share more traits than amphorae made in pottery workshops furthest. In other words, the variability on the making techniques processes between closer workshops was difficult to differentiate. In our case, Malpica and Bel\'en workshops where the geographical proximity are the closest shared more traits in comparison with other workshops (Parlamento and Las Delicias). Thus the probability of interaction between workshops is increasing when the proximity is closest while this likelihood decreases when the possibility of interaction is low. 
 
-We have observed than rivers courses could have affected in the transmission factors. In the case of the commerce, rivers and its tributaries played an important role for the transport of goods. The huge demand within Roman Empire and the good conditions for the loading and unloading of products (concierto aceite romano//berni) might have influenced the mode of transmission due to the continuous contact between workshops. 
+We have observed than rivers courses could have affected in the transmission factors. In the case of the commerce, rivers and its tributaries played an important role for the transport of goods. The huge demand within Roman Empire and the good conditions for the loading and unloading of products (concierto aceite romano//berni) might have influenced the mode of transmission due to the continuous contact between workshops. \xavi{no entiendo esta frase aqui. que quieres decir?} 
 
-The results confirm also that vertical transmission could be the main cultural mechanism to explain the variability between workshops. The different morphological traits among workshops seem proper of a low contact between potters from others workshops. The evidenced more probable confirms that pottery techniques would be learned from master to disciple by social learning. These techniques traits, therefore, were transmitted with high fidelity and only with few changes during three centuries. It would mean that the disciples could have remained the making techniques processes in the workshops where they were trained.  
+The results confirm also that vertical transmission could be the main cultural mechanism to explain the variability between workshops. \xavi{confirm y could be no van bien juntar. suggest? }The different morphological traits among workshops seem proper of a low contact between potters from others workshops. The evidenced more probable confirms that pottery techniques would be learned from master to disciple by social learning\xavi{esta frase es redundante}. These techniques traits, therefore, were transmitted with high fidelity and only with few changes during three centuries. It would mean that the disciples could have remained the making techniques processes in the workshops where they were trained.  
 
-By contrast, horizontal transmission doesn't seem to be the most probable process. The continuous contact between potters from different places had generated a more homogeneity in the technical practises. Workshops were sharing the same production techniques. As a result, it would generate a social network where potters with the same social learning level worked in different workshops at the same time. Our result suggest a progressive contact with closer workshop instead. Thus, the correlation between spatial distance and cultural traits were supported with our results. In any case we don't discard that horizontal transmission had an important role in this process.   
+By contrast, horizontal transmission doesn't seem to be the most probable process. The continuous contact between potters from different places had generated a more homogeneity in the technical practises. Workshops were sharing the same production techniques. As a result, it would generate a social network where potters with the same social learning level worked in different workshops at the same time. Our result suggest a progressive contact with closer workshop instead. Thus, the correlation between spatial distance and cultural traits were supported with our results. In any case we don't discard that horizontal transmission had an important role in this process.\xavi{yo lo argumentaria distinto...el hecho que se detecte isolation-by-distance sugiere que los alfareros no se desplazaben demasiado entre workshops lejanos. Asi, vertical transmission es un proceso que puede explicar lo observado. Sin embargo, los procesos de social learning son normalmente complejos y no exclusivos, por lo que el hecho que sea primariamente de maestro a alumno en el mismo workshop no descarta que hubiera cierta transmision horizontal, bien entre alfareros intercambiando ideas o alfareros desplazandose a otros workshops.}
 
 %podría ser conclusión
-The combination of empirical analysis with the statistical methods have provided a strong baseline for a better understanding of the amphorae production in the Roman Empire. These methods offer also an strong complement to other methods as archaeometry for the characterization of production sites and places of consumption.  
+The combination of empirical analysis with the statistical methods have provided a strong baseline for a better understanding of the amphorae production in the Roman Empire\xavi{Esto es el JAS, no hace falta que vendas los metodos cuantitativos :-)}. These methods offer also an strong complement to other methods as archaeometry for the characterization of production sites and places of consumption.  
 
 We have identified measurable differences in the techniques by observing and we have tested these particularities using multivariate methods. Our analysis provides an useful baseline for the exploration of the social learning processes related with amphora production in the Roman Empire. Hence, the results have lightened to understand the link between social learning and archaeological evidence in a diversity of scenarios. 
 
