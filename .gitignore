@@ -31,7 +31,8 @@
 *-blx.bib
 *.brf
 *.run.xml
-*.bib~* #kbibtex temp file
+*.bib~*
+#kbibtex temp file
 
 ## Build tool auxiliary files:
 *.fdb_latexmk
