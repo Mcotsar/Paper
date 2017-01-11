@@ -58,7 +58,7 @@ ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2, col=site)) + geom_point() + face
 g1 <- ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2, colour=factor(class))) + geom_point() + facet_grid(~site) + ggtitle("pca1_2")
 ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2, col=interaction(site,class), label=site)) + geom_text(size=5) + theme_bw() + theme(legend.position="top")
 
-#use summary to see the cumulative stuff, standard deviation, etc. 
+#use summary to see the cumulative stuff, standard deviation, etc. Use head to see the resuts of the variables. 
 
 #######  Discriminant Analysis   ##########
 
