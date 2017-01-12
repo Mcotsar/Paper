@@ -60,6 +60,13 @@ ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2, col=interaction(site,class), lab
 
 #use summary to see the cumulative stuff, standard deviation, etc. Use head to see the resuts of the variables. 
 
+#with the application of geom_density2d and dev.off to keep it
+
+svg('fig_dist.svg3')    
+ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2)) + geom_density2d(aes(col=site), alpha=0.3) + geom_point(aes(col=site), size=2) + facet_wrap(~site, ncol=1) + theme(legend.position='none')
+dev.off()
+
+
 #######  Discriminant Analysis   ##########
 
 
@@ -91,29 +98,22 @@ svg('resultados.svg'), width=15, height=8)
 ggplot(result, aes(x=Comp.1, y=Comp.2, col=site)) + geom_point(size=3) + facet_wrap(~predict, ncol=2) + ggtitle('resultado PCA+DA')
 dev.off()
 
-#different ways to do it 
-
-svg('puntitos3.svg')    
+#other different ways to perform the prediction
+    
 ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2, col=site)) + geom_point() + facet_wrap(~correcto, ncol=1) + ylim(c(-0.3,0.3))
-dev.off()
-
-svg('fig_dist.svg3')    
-ggplot(foo, aes(x=Comp.1, y=Comp.2)) + geom_density2d(aes(col=site), alpha=0.3) + geom_point(aes(col=site), size=2) + facet_wrap(~site, ncol=1) + theme(legend.position='none')
-dev.off()
-
 
 
 ##### Matrix distance #######
 
-distMetrics <- matrix(0, nrow=4, ncol=4)
-rownames(distMetrics) <- c('parlamento','belen','delicias','malpica', 'villaseca')
-colnames(distMetrics) <- c('parlamento','belen','delicias','malpica', 'villaseca')
+distMetrics <- matrix(0, nrow=5, ncol=5)
+rownames(distMetrics) <- c('parlamento','belen','delicias','malpica','villaseca')
+colnames(distMetrics) <- c('parlamento','belen','delicias','malpica','villaseca')
 
 parlamento <- subset(myData, site=='parlamento')    
 belen <- subset(myData, site=='belen')    
 delicias <- subset(myData, site=='delicias')    
 malpica <- subset(myData, site=='malpica')
-malpica <- subset(myData, site=='villaseca')
+villaseca <- subset(myData, site=='villaseca')
 
 # 1 - parlamento-belen
 pairData <- rbind(parlamento,belen)
@@ -335,6 +335,9 @@ distMetrics['delicias','villaseca'] <- conf$overall['Accuracy']
 
 distMetrics
 
+#plot of the distances with you have a database with the geodistance and pottery distance. 
+
+ggplot(distMetrics, aes(x=distpottery, y=distgeo)) + geom_point(aes(shape=from, col=to), size=3)
 
 
 
