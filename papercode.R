@@ -9,7 +9,7 @@ library(caret)
 myData <- read.csv('drespaper.csv', header=T, sep=",")
 
 ##choose the type of Dressel to do the analyse
-myData= subset(myData, type %in% c("Dressel C","Dressel D","Dressel E","Dressel G","Dressel H"))
+myData= subset(myData, type %in% c("Dressel C","Dressel D","Dressel E","Dressel G"))
 myData <- myData[,5:13]
 
 ##testing elements with different variables 
