@@ -11,6 +11,8 @@ myData <- read.csv('drespaper.csv', header=T, sep=",")
 ##choose the type of Dressel to do the analyse
 myData= subset(myData, type %in% c("Dressel C","Dressel D","Dressel E","Dressel G"))
 myData <- myData[,5:13]
+#to count the data
+count(myData)
 
 ##testing elements with different variables 
 
@@ -55,8 +57,8 @@ ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2, col=site)) + geom_point()
 ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2, col=site)) + geom_point() + facet_wrap(~site,ncol=1)
 
 #more testing (ERROR)
-g1 <- ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2, colour=factor(class))) + geom_point() + facet_grid(~site) + ggtitle("pca1_2")
-ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2, col=interaction(site,class), label=site)) + geom_text(size=5) + theme_bw() + theme(legend.position="top")
+#g1 <- ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2, colour=factor(class))) + geom_point() + facet_grid(~site) + ggtitle("pca1_2")
+#ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2, col=interaction(site,class), label=site)) + geom_text(size=5) + theme_bw() + theme(legend.position="top")
 
 #use summary to see the cumulative stuff, standard deviation, etc. Use head to see the resuts of the variables. 
 
