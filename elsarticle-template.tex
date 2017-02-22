@@ -73,8 +73,7 @@
 %This template helps you to create a properly formatted \LaTeX\ manuscript.
 \end{abstract}
 
-\begin{keyword}
-Cultural Evolution, Roman Empire, amphorae production, social learning
+\begin{keyword}Cultural Evolution, Roman Empire, amphorae production, social learning
 \end{keyword}
 
  \end{frontmatter}
@@ -115,7 +114,7 @@ Material culture variability allows to understand a part of the mechanism of the
 
 This paper explores the changes in the production processes during the Roman Empire. In particular, our study is focused on understanding the pottery-making techniques by analyzing large-scale amphorae production in a specific area. In this case, an evolutionary framework is used for studying the implication and the impact that this production might involve on the  evolution of social learning processes.  Within evolutionary perspective, social learning is analyzed to understand the human behaviour in archaeology. Thought material culture, we can observe cultural patterns which can explain how the culture evolve \citep{richerson2005not}. Specifically, the aim of this study is understanding how the amphorae production were organized and whether it is possible to identify amphorae made in different workshops. Our main hypothesis concerns about understanding if pottery-making techniques were transmitted through vertical or horizontal social learning and how those techniques could have been transmitted in time and space. 
 
-Following a large number of authors \citep{cavalli-sforza_cultural_1981, hosfield_modes_2009}, pottery production can be learned on different modes of cultural transmission depending on the level of production in the communities. Vertical transmission is a mode of transmission when the teaching of the production is done from master to disciple  while in horizontal transmission the workers teach pottery techniques to others workers at the same level and those workers spread the knowledges to their community. 
+Following a large number of authors \citep{cavalli-sforza_cultural_1981, hosfield_modes_2009}, pottery production can be learned on different modes of cultural transmission depending on the level of production in the communities. Vertical transmission is a mode of transmission when the teaching of the production is done from master to disciple  while in horizontal transmission individuals teach pottery techniques to others individuals within the same level and those workers spread the knowledges to their community. 
 %cambiar artifact variation// quizas meter producción en masa aquí relacionada con la variacion del artefacto... ??? 
 
  
@@ -184,18 +183,7 @@ The performed results with PCA were analysed with Lineal Discriminant Analyse (L
 
 \section{Results}
 
-Several multivariate methods such as PCA and LDA were used to quantify the technical differences on the pattern production among workshops. The analysis of PCA produces a set of values for each variable observed. Variables show how much variability exist in the dataset grouped by each principal components. The results, indicated in the Fig \ref{pcaresults}, show a huge variability in the first principal component than the rest.
-
-
-\begin{figure}[htp]
-	\centering
-\includegraphics[scale=0.30]{pcaresults.png}
-\caption{PCA results}
-\label{pcaresults}
-\end{figure} 
-
-As the Table~\ref{table:variable} shows, the most differences were focused on the protruding rim and rim width 2.   
-
+Several multivariate methods such as PCA and LDA were used to quantify the technical differences on the pattern production among workshops. The analysis of PCA produces a set of values for each variable observed. Variables show how much variability exist in the dataset grouped by each principal components. The results, indicated in the Table~\ref{table:variable}, show the most differences were focused on the protruding rim and rim width 2. 
 
 \begin{table}[htp]
 \begin{tabular}{lcccccccc}
@@ -235,12 +223,11 @@ Proportion  & 	   &		&	  &   	&	  &	    &     &           \\
 Cumulative  &       &    &     &     &     &     &     &           \\
 
 \end{tabular}
-\caption{8 principal components}
+\caption{Result values from Principal Component Analysis}
 \label{table:spatgeo}
 \end{table}
 
 Discriminant Analysis was used to analyze the results obtained from PCA. The results of CM proved that workshops with more troubles to be distinguished such Malpica and Bel\'en shared a minor spatial distance than the rest (see Table~\ref{table:confusion}). Therefore, amphorae making techniques processes were strongly correlated with the spatial distance in the case of \textit{Baetica} area. 
-\xavi{distance matrix?} \maria{no entiendo lo de distance matrix}
 
 \begin{table}[htp]
 \begin{tabular}{lccccc}
@@ -259,9 +246,26 @@ Villaseca   &   3   &     6   &    6  &        6  &     18 \\
 \end{table}
 
 
-We compared morphometric and spatial distance by performing peer-to-peer analysis between all the workshops. We calculated the geographical distance between each site and the distance among amphora measurements, calculated using the previous results. The workshops were chosen with different distance in order to prove the correlation between spatial distance and variability of the amphorae.  Table~\ref{table:spatgeo} shows the results of the analysis of morphometric distance in comparison with the real geographic distance. Here morphometric distance of the amphorae are strongly correlated with the spatial distance of workshops. When the geographic distance is lower as the example of Belen and Malpica the morphometric distance is more similar (poner figura del grafico de las distancias). Thus, the results suggest a variability on the making-techniques processes might depend on the spatial distance.  
-%aumentar con nuevos resultados 
-\maria{debería poner el plot con los resultados del geographic distance y morphometric?}
+We compared morphometric and spatial distance by performing peer-to-peer analysis between all the workshops. We calculated the geographical distance between each site and the distance among amphora measurements, calculated using the previous results. The workshops were chosen with different distance in order to prove the correlation between spatial distance and variability of the amphorae. Distance Matrix (see Table~\ref{table:spatialdistance}) shows the results of the analysis of morphometric distance. The workshops with morphometric distances lower tended to be more similar than the rest. The results of the analysis were compare with the real geographic distance, shown in the Table~\ref{table:spatgeo}. Here morphometric distance of the amphorae are strongly correlated with the spatial distance of workshops. When geographic distance is lower as the example of Belen and Malpica the morphometric distance is more similar whereas when distance is higher, as Parlamento, the morphometric distance display differences with the rest of workshops. Thus, the results suggest a variability on the making-techniques processes might depend on the spatial distance.  
+
+
+\begin{table}[htp]
+\begin{tabular}{lccccc}
+\hline
+ & Belen & Delicias & Malpica & Parlamento & Villaseca\\ \hline
+Belen &  &        &         &           &           \\
+Delicias       &   &        &       &         &          \\
+Malpica &          &        &          &         &       \\
+Parlamento &        &         &       &         &        \\
+Villaseca   &       &        &      &          &      \\
+\hline
+
+\end{tabular}
+\caption{Results of matrix distance among workshops}
+\label{table:spatialdistance}
+\end{table}
+
+
 
 \begin{table}[htp]
 \begin{tabular}{llcc}
