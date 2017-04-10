@@ -146,7 +146,8 @@ We collected a dataset of 470 amphorae from 5 different workshops excavated in o
 
 \begin{figure}[htp]
 	\centering
-\includegraphics[scale=0.30]{romanworkshop.png}
+\includegraphics[scale=0.30
+]{romanworkshop.png}
 \caption{Dressel 20 workshops were mostly distributed along the rivers Gualdalquivir and Genil. Location of the five workshops analyzed in this area.}
 \label{romanworkshop}
 \end{figure} 
@@ -179,7 +180,7 @@ We used Principal Component Analysis (PCA) to simplify the large number of varia
 
 \subsection{Discriminant Linear Analysis} 
 
-The variability of the first 2 Principal Components was used to cluster our dataset using Linear Discriminant Analysis (LDA). LDA will be conducted to find significant differences among workshops by the combination among variables obtained for the firsts principal components. LDA identifies which variables allow to distinguish each group and how many variables are necessary to achieve the best combination as possible. Thus, LDA is used to explore a better separate training set from the results of the most relevant principal components. In our dataset, the firsts principal components produced by the amphorae measurements are grouped into each workshop groups and are separated to obtain a better discrimination among groups. 
+The variability of the first 2 Principal Components was used to cluster our dataset using Linear Discriminant Analysis (LDA). LDA will be conducted to find significant differences among workshops by the combination among variables obtained for the firsts principal components. LDA identifies which variables allow to distinguish each group and how many variables are necessary to achieve the best combination as possible. Thus, LDA is used to explore a better separate training set from the results of the most relevant principal components. In our dataset, the firsts principal components produced by the amphora measurements are grouped into each workshop groups and are separated to obtain a better discrimination among groups. 
 We also generate a Confusion Matrix (CM) to able of quantifying the degree of confusion and compare the index of similarity among workshops.  CM calculated the probability of success and error of the results. It generates a matrix where higher value are the results of an incorrect classification. As example, this method has been commonly used to detect differences in artifact production \citep{charlton_investigating_2012, thorpe_distribution_1984}, and particularly for a similar study about pottery production in \emph{Tarraconense} \citep{i_martin_alisis_1998}
 
 %The variability of the first 2 Principal Components was used to cluster our dataset using Linear Discriminant Analysis (LDA). LDA was conducted to find significant differences among workshops by the combination among variables obtained for the first principal components. LDA identifies which variables allow to distinguish or discriminate each group and how many variables are necessary to achieve the best combination as possible. In our case, this method allowed to demonstrate the correlation between spatial distance and distance among workshops. LDA was used to explore a better separate training set from the results of the most relevant principal components. LDA can classify the PCs result of the measurements into different groups.  We also generate a Confusion Matrix (CM) to able of quantifying the degree of confusion and compare the index of similarity among workshops.  CM calculated the probability of success and error of the results. It generates a matrix where higher value are the results of an incorrect classification. The distance generated with the results of DA will be compared with the spatial distance to see if it exists a correlation between morphometric distance and spatial distance. As example, this method has been commonly used to detect differences in artifact production \citep{charlton_investigating_2012, thorpe_distribution_1984}, and particularly for a similar study about the production pottery in \emph{Tarraconense} \citep{i_martin_alisis_1998}
@@ -187,6 +188,11 @@ We also generate a Confusion Matrix (CM) to able of quantifying the degree of co
 %\xavi{El parrafo es un poco caotico. Mira otros papers para ver un poco como organizarlo mejor si puedes. Por ejemplo, no hace falta que menciones la distancia espacial hasta el final, porque en el LDA y el PCa no se usa esa distancia para nada. Quizas una subsection final sobre comparacion de distancias?}
 
 \subsection{Distance}
+
+The morphometric distance generated with the results of DA will be compared with the spatial distance to see if it exists a correlation between morphometric distance and geographic distance. 
+explicar el método 
+
+
 
 
 \section{Results}
@@ -242,32 +248,36 @@ Discriminant Analysis was used to analyse the results obtained from PCA. \xavi{y
 \begin{table}[htp]
 \begin{tabular}{lccccc}
 \hline
- & Belen & Delicias & Malpica & Parlamento & Villaseca\\ \hline
-Belen & 31 &       8 &      14 &          9 &          9 \\
-Delicias       & 0 &        22 &       6&         11&         1 \\
-Malpica &       5  &     2  &    11   &       2  &      10 \\
-Parlamento &     4  &      5 &      6 &        15 &        5\\
-Villaseca   &   3   &     6   &    6  &        6  &     18 \\
+      & Belen & Delicias & Malpica & Parlamento & Villaseca\\ \hline
+Belen &   31  &      6   &   12    &     11     &   13 \\
+Delicias&  2  &     27   &    6    &     13     &    1  \\
+Malpica &  6  &      4   &   16    &      2     &   13   \\
+Parlamento & 3&      2   &   3     &      14    &    6    \\
+Villaseca  & 0&      3   &    5    &      2     &    9     \\
 \hline
 
 \end{tabular}
-\caption{Confusion Matrix with rows pointing out the workshops analysed. The sample analyzed gave an accuracy percentage of 45.12 $\%$. Results of P.Value $<$0.01. }
+\caption{Confusion Matrix with rows pointing out the workshops analysed. The sample analyzed gave an accuracy percentage of 46.19 $\%$. Results of P.Value $<$0.01. }
 \label{table:confusion}
 \end{table}
 
 
-We compared morphometric and spatial distance by performing peer-to-peer analysis between all the workshops. We calculated the geographical distance between each site and the distance among amphora measurements, calculated using the previous results. The workshops were chosen with different distance in order to prove the correlation between spatial distance and variability of the amphorae. Distance Matrix (see Table~\ref{table:spatialdistance}) shows the results of the analysis of morphometric distance. The workshops with morphometric distances lower tended to be more similar than the rest. The results of the analysis were compare with the real geographic distance, shown in the Table~\ref{table:spatgeo}. Here morphometric distance of the amphorae are strongly correlated with the spatial distance of workshops. When geographic distance is lower as the example of Belen and Malpica the morphometric distance is more similar whereas when distance is higher, as Parlamento, the morphometric distance display differences with the rest of workshops. Thus, the results suggest a variability on the making-techniques processes might depend on the spatial distance.  
+\subsection{Distance}
+
+We compared morphometric and spatial distance by performing peer-to-peer analysis between all the workshops. We calculated the geographical distance generated by the Euclidean distance between each site and the distance among amphora measurements, calculated using the previous results. The workshops were chosen with different distance in order to prove the correlation between spatial distance and variability of the amphorae. Distance Matrix (see Table~\ref{table:spatialdistance}) shows the results of the analysis of morphometric distance. The workshops with morphometric distances lower tended to be more similar than the rest. The results of the analysis were compare with the real geographic distance, shown in the Fig~\ref{spatgeo}. Here morphometric distance of the amphorae are strongly correlated with the spatial distance of workshops. When geographic distance is lower as the example of Belen and Malpica the morphometric distance is more similar whereas when distance is higher, as Parlamento, the morphometric distance display differences with the rest of workshops. Thus, the results suggest a variability on the making-techniques processes might depend on the spatial distance.  
+
+%In our case, this method allowed to demonstrate the correlation between spatial distance and distance among workshops
 
 
 \begin{table}[htp]
 \begin{tabular}{lccccc}
 \hline
- & Belen & Delicias & Malpica & Parlamento & Villaseca\\ \hline
-Belen &  &        &         &           &           \\
-Delicias       &   &        &       &         &          \\
-Malpica &          &        &          &         &       \\
-Parlamento &        &         &       &         &        \\
-Villaseca   &       &        &      &          &      \\
+        & Belen   &   Delicias & Malpica & Parlamento & Villaseca\\ \hline
+Belen   &         &   0.8409091&0.7272727&0.7857143   &0.7169811  \\
+Delicias&0.8409091&            &0.7522523&0.7023810   &0.8018868   \\
+Malpica &0.7272727&0.7522523   &         &0.7142857   &0.6509434    \\
+Parlamento&0.7857143&0.7023810&0.7142857&            &0.7380952     \\
+Villaseca&0.7169811&0.8018868&0.6509434&0.7380952    &                \\
 \hline
 
 \end{tabular}
@@ -275,40 +285,46 @@ Villaseca   &       &        &      &          &      \\
 \label{table:spatialdistance}
 \end{table}
 
+\begin{figure}[htp]
+	\centering
+\includegraphics[scale=0.45]{spatgeo.pdf}
+\caption{Plot with the results of the comparison between morphometric distance and geographic distance (km)}
+\label{spatgeo}
+\end{figure} 
 
 
-\begin{table}[htp]
-\begin{tabular}{llcc}
-\hline
- From		& To 		& Morphometric distance	& Geographic distance\\ \hline
- Parlamento	& Belen		& 						&  72.45				 \\
- Parlamento	& Delicias	& 						&  82.01				 \\
- Parlamento	& Malpica   &                       	&  74.77                      \\
- Parlamento	& Villaseca	&						&  95.33					\\
- Belen		& Parlamento &						&  72.45						\\
- Belen		& Delicias   &						&  22.82      				 \\                                    
- Belen		& Malpica	&						&  8.73							\\	
- Belen		& Villaseca  &                       &  25.23                         \\
- Delicias	& Parlamento  &                      &  82.01                            \\
- Delicias	& Belen       &						&  22.82						\\
- Delicias	& Malpica     &						&  14.19						\\
- Delicias	& Villaseca   &						&  22.45						\\
- Malpica		& Parlamento  &						&  74.77						\\
- Malpica		& Belen       &						&  8.73						\\
- Malpica		& Delicias    &						&  14.19						\\
- Malpica    & Villaseca	  &						&  20.97                     \\
- Villaseca	& Belen       &						&  25.23					     \\	             Villaseca	& Malpica     &						&  20.97								\\
- Villaseca	& Delicias	  &						&  22.45								\\
- Villaseca	& Parlamento	  &						&  95.33								\\
+%\begin{table}[htp]
+%\begin{tabular}{llcc}
+%\hline
+% From		& To 		& Morphometric distance	& Geographic distance\\ %\hline
+% Parlamento	& Belen		& 						&  72.45				 \\
+% Parlamento	& Delicias	& 						&  82.01				 \\
+ %Parlamento	& Malpica   &                       	&  74.77                      \\
+ %Parlamento	& Villaseca	&						&  95.33					\\
+ %Belen		& Parlamento &						&  72.45						\\
+ %Belen		& Delicias   &						&  22.82      				 \\                                    
+ %Belen		& Malpica	&						&  8.73							%\\	
+ %Belen		& Villaseca  &                       &  25.23                         \\
+ %Delicias	& Parlamento  &                      &  82.01                            \\
+ %Delicias	& Belen       &						&  22.82						\\
+ %Delicias	& Malpica     &						&  14.19						\\
+ %Delicias	& Villaseca   &						&  22.45						\\
+ %Malpica		& Parlamento  &						&  74.77						\\
+ %Malpica		& Belen       &						&  8.73						\\
+ %Malpica		& Delicias    &						&  14.19						\\
+ %Malpica    & Villaseca	  &						&  20.97                     \\
+ %Villaseca	& Belen       &						&  25.23					     \\Villaseca	& Malpica     &		                 &  20.97			
+ %\\
+ %Villaseca	& Delicias	  &						&  22.45								\\
+ %Villaseca	& Parlamento	  &						&  95.33								\\
                                                    
-\hline
+%\hline
 
-\end{tabular}
-\caption{Results with the comparison between morphometric distance and geographic distance (km) }
-\label{table:spatgeo}
-\end{table}
+%\end{tabular}
+%\caption{Results with the comparison between morphometric distance and geographic distance (km) }
+%\label{table:spatgeo}
+%\end{table}
 
-\xavi{Y un grafico aqui en lugar de la tabla a pelo?}
 
 \section{Discussion and Conclusion}
 
