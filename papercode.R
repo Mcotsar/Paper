@@ -9,7 +9,7 @@ library(caret)
 myData <- read.csv('drespaper.csv', header=T, sep=",")
 
 ##choose the type of Dressel to do the analyse
-myData= subset(myData, type %in% c("Dressel C","Dressel D","Dressel E","Dressel G"))
+myData= subset(myData, type %in% c("Dressel C","Dressel D","Dressel E"))
 myData <- myData[,5:13]
 #to count the data
 count(myData)
@@ -102,7 +102,7 @@ dev.off()
 
 #other different ways to perform the prediction
     
-ggplot(pcaValuesSample, aes(x=Comp.1, y=Comp.2, col=site)) + geom_point() + facet_wrap(~correcto, ncol=1) + ylim(c(-0.3,0.3))
+#ggplot(result, aes(x=Comp.1, y=Comp.2, col=site)) + geom_point(size=3) + facet_wrap(~correct, ncol=1) + ylim(c(-0.3,0.3)) (ERROR)
 
 
 ##### Matrix distance #######
@@ -337,10 +337,15 @@ distMetrics['delicias','villaseca'] <- conf$overall['Accuracy']
 
 distMetrics
 
+###create a plot with the result of spatial distance and morphometric distance#### 
+
 #plot of the distances with you have a database with the geodistance and pottery distance. 
 
-ggplot(distMetrics, aes(x=distpottery, y=distgeo)) + geom_point(aes(shape=from, col=to), size=3)
-
+library(ggplot2)
+foo <- read.csv('distmetrics.csv', header=T, sep=",")
+pdf('plot_dists.pdf')
+ggplot(foo, aes(x=distpottery, y=distgeo)) + geom_point(aes(shape=from, col=to), size=3)
+dev.off()
 
 
 #########DISTANCE MEASUREMENT AND PLOT FROM XAVI RUBIO DATA ##############################
