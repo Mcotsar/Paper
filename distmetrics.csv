@@ -1,0 +1,21 @@
+from,to,distpottery,distgeo
+parlamento,belen,0.7857143,72.45
+parlamento,delicias,0.702381,82.01
+parlamento,malpica,0.7142857,74.77
+parlamento,villaseca,0.7380952,95.33
+belen,parlamento,0.7857143,72.45
+belen,delicias,0.8409091,22.82
+belen,malpica ,0.7272727,8.73
+belen,villaseca,0.7169811,25.23
+delicias,parlamento,0.702381,82.01
+delicias,belen,0.8409091,22.82
+delicias,malpica,0.7522523,14.19
+delicias,villaseca,0.8018868,22.45
+malpica,parlamento,0.7142857,74.77
+malpica,belen,0.7272727,8.73
+malpica,delicias,0.7522523,14.19
+malpica,villaseca,0.6509434,20.97
+villaseca,belen,0.7169811,25.23
+villaseca,malpica,0.6509434,20.97
+villaseca,delicias,0.8018868,22.45
+villaseca,parlamento,0.7380952,95.33
