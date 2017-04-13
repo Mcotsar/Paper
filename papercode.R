@@ -22,6 +22,7 @@ ggplot(myData, aes(x=rim_w_2, y=protruding_rim, colour=site)) + geom_point() + f
 
 #######  Minimum   ####### 
 #we use this analyse to equate the sample 
+#we are using a dataset of 210 to training set
 
 sampleSize = min(count(myData,'site')$freq)
 
@@ -45,7 +46,9 @@ sample <- rbind(sample, sample5)
 ######  Principal Component Analyse  ########
 
 logDataSample <- log(sample[,1:8])
-pcaResultsSample <- princomp(logDataSample, center=T, scale=T)
+pcaResultsSample <- princomp(logDataSample)
+
+#center=T, scale=T)optional. ggplot new is not neccesary 
 
 # plot to check the relevance of the first 2 PC'S
 plot(pcaResultsSample)
