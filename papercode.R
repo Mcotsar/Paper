@@ -350,7 +350,6 @@ pdf('plot_dists.pdf')
 ggplot(foo, aes(x=distpottery, y=distgeo)) + geom_point(aes(shape=from, col=to), size=3)
 dev.off()
 
-
 #########DISTANCE MEASUREMENT AND PLOT FROM XAVI RUBIO DATA ##############################
 
 library(ggplot2)
