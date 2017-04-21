@@ -51,7 +51,11 @@
 
 %% Group authors per affiliation:
 %\author{Mar\'ia Coto-Sarmiento\fnref{myfootnot}}
-\author[bscadress]{Maria Coto-Sarmiento \corref{mycorrespondingauthor}}
+\author[bscadress]{Maria Coto-Sarmiento\corref{mycorrespondingauthor}}
+\cortext[mycorrespondingauthor]{Corresponding author}
+\ead{maria.coto@bsc.es}
+
+
 \author[edadress]{Xavier Rubio-Campillo}
 \author[ceipacadress]{Jos\'e Remesal}
 
@@ -63,21 +67,17 @@
 %\ead[url]{www.elsevier.com}
 
 %\author[mysecondaryaddress]{Maria Coto-Sarmiento\corref{mycorrespondingauthor}}
-\cortext[mycorrespondingauthor]{Corresponding author}
-\ead{maria.coto@bsc.es}
 
 \address[bscadress]{Barcelona Supercomputing Center (BSC), Barcelona, Spain}
 \address[edadress]{University of Edinburgh, UK}
 \address[ceipacadress]{CEIPAC, University of Barcelona, Barcelona, Spain}
 \begin{abstract}
 
-\maria{repasar abstract/frases inconclusas}
-
 The aim of this study is to analyse social learning patterns within amphorae production among workshops in the Roman Empire. Cultural Evolution is applied to understand the effect that this production might have on the evolution of social learning of potters. 
 
 This analysis can be developed by the fact that we detect differences in the amphorae production through time and space that they might explain this dynamic of change. However,  different debates revolve around how individuals or groups acquired and transmitted technical skills. In addition, this challenge is combined with the problem of detecting different modes of transmission in the archaeological record. In archaeology, several studies have analysed these processes focused on the handmade production techniques of pottery. In our case, we want to discover if these processes could be similar with a more standardized production. 
 
-Our main case study has been focused to understand the production dynamics of olive oil amphorae production located in \textit{Baetica} province (currently Andalusia) during the Roman Empire (1st-3rd century AD). In particular, multivariate statistical methods have been applied to distinguish  assemblages among different kinds of amphora shapes that it could serve to detect different patterns in the production techniques among workshops. Specifically, we want to identify if these changes might have been influenced by cultural reasons or other cultural constraints.
+Our main case study has been focused to understand the production dynamics of olive oil amphorae located in \textit{Baetica} province (currently Andalusia) during the Roman Empire (1st-3rd century AD). In particular, multivariate statistical methods have been applied to distinguish  assemblages among different kinds of amphora shapes that it could serve to detect different patterns in the production techniques among workshops. Specifically, we want to identify if these changes might have been influenced by cultural reasons or other cultural constraints.
 
 The analysis explores how cultural evolution provides a strong baseline for the interpretation of the cultural pattern. Finally, the results suggest that different factors as spatial distance can influence in the production processes. 
 
@@ -119,7 +119,6 @@ The analysis explores how cultural evolution provides a strong baseline for the 
 \section{Introduction}
 
 Material culture allows to understand a part of the mechanism of the human behavior \citep{richerson2005not, schillinger_copying_2016}. We can observe cultural patterns through material culture which can explain how the culture evolves \citep{richerson2005not}. This mechanism can be analysed by the study of variability on material culture which can help us detect social learning patterns as, for example, how to teach and make an amphora. In archaeology, the detection of these patterns in the archaeological records could also explain whether these changes are produced by cultural reasons which varying over time and space \citep{basalla1988evolution}. As a result, different information is shared by social learning generating an accumulation of knowledge which is transmitted from generation to generation in different conditions of context and content. \citep{eerkens_jelmer_cultural_2005, neff1992ceramics,henrich_evolution_2003, boyd_cultural_2011}. In any case, the mode of learning transmission along with several external conditions might affect directly or indirectly the pattern of manufacturing of the artefacts.
-\maria{hilar un poco más para que tenga relación con el siguiente contexto}
 Moreover the detection of these patterns can result more significant in large-scale pottery productions when this production is increasing to satisfy the demand of more complex societies, as the case of Roman Empire. This huge of production allow us to detect some morphometrical variations to understand a part of the economic dynamic of Empire. 
 
 This paper explores the changes in the production processes during the Roman Empire. In particular, our study is focused on understanding the pottery-making techniques by analysing large-scale amphorae production in a specific area. In this case, an evolutionary framework \citep{mesoudi_cultural_2015, shennan_evolution_2008} is used for studying the implication and the impact that this production might involve on the  evolution of social learning processes. Within evolutionary perspective, social learning is analysed to understand the production mechanisms in amphorae. Specifically, the aim of this study is understanding how the amphorae production were organized and whether it is possible to identify amphorae made in different workshops. Our main hypothesis concerns about understanding the modes of transmission of pottery-making techniques and how these techniques could have been transmitted in time and space. 
@@ -145,14 +144,12 @@ For this reason, this ancient province became in an important support for the pr
 This amphora type was used mostly to transport olive oil for around 300 years in order to satisfy the demand within Roman Empire \citep{rodriguez_economioleicola_1977}. In particular, olive oil was a significant product frequently related in different aspect of the roman daily life such as consumption, lighting and hygiene \citep{mattingly_d.j._oil_1988}. 
 %%add una cita m\'as Peacock
 
-The importance of this commerce is also showed by the fact that Dressel 20 amphorae production was identified with different marks about its provenance although the meaning of the actors in this process seems not clear \citep{coto-sarmiento_maria_bayesian_????}. Thus, amphorae production was a particular example of production strategy that experimented few changes around three centuries. In any case, our main question will be related to understand how the amphorae workshops were organized in \textit{Baetica} area and the transmission of the production techniques by potters. 
-
-Thereby, our hypothesis revolves around technological knowledge could have been vertically transmitted where production techniques are learned from master to apprentice and thus continuously. When vertical transmission predominates in this process over horizontal transmission then amphorae made in nearby workshops might share more similar traits than amphorae made from farthest workshops. Otherwise whether horizontal transmission is the main transmission in this process the social learning of these techniques would be transmitted by workers. Then there would not be differences among workshops on the production. In our case, we can detect measurable differences among this type of amphorae correlated with the geographical distance.
+The importance of this commerce is also showed by the fact that Dressel 20 amphorae production was identified with different marks about its provenance although the meaning of the actors in this process seems not clear \citep{coto-sarmiento_maria_bayesian_????}. Thus, amphorae production was a particular example of production strategy that experimented few changes around three centuries. In any case, our main question will be related to understand how the amphorae workshops were organized in \textit{Baetica} area and the transmission of the production techniques by potters. Thereby, our hypothesis revolves around technological knowledge could have been vertically transmitted where production techniques are learned from master to apprentice and thus continuously. When vertical transmission predominates in this process over horizontal transmission then amphorae made in nearby workshops might share more similar traits than amphorae made from farthest workshops. Otherwise if horizontal transmission is the main transmission in this process the social learning of these techniques would be transmitted by workers. Then there would not be differences among workshops on the production. In our case, we can detect measurable differences among this type of amphorae correlated with the geographical distance.
 
 
 \section{Material and methods}
 
-We collected a dataset of 470 amphorae from 5 different workshops excavated in order to identify the social learning process that tooks place in the case study. The workshops were located in Malpica (Palma del R\'io, C\'ordoba), Cerro del Bel\'en (Palma del R\'io, C\'ordoba) \citep{diaz_trujillo_excavacion_1992}, Parlamento (Sevilla) \citep{garcia_vargas_anforas_2000}, Villaseca (C\'ordoba)\citep{garcia_vargas_enrique_excavacion_????} and Las Delicias (\'Ecija, Sevilla) \citep{fernandez_excavacion_2001,_atelier_2014} (see map \ref{romanworkshop}).
+We collected a dataset of 470 amphorae from 5 different workshops excavated in order to identify the social learning process that tooks place in the case study. The workshops were located in Malpica (Palma del R\'io, C\'ordoba), Cerro del Bel\'en (Palma del R\'io, C\'ordoba)(hereafter, Bel\'en) \citep{diaz_trujillo_excavacion_1992}, Parlamento (Sevilla) \citep{garcia_vargas_anforas_2000}, Villaseca (C\'ordoba)\citep{garcia_vargas_enrique_excavacion_????} and Las Delicias (\'Ecija, Sevilla) \citep{fernandez_excavacion_2001,_atelier_2014} (see map \ref{romanworkshop}).
 
 \begin{figure}[htp]
 	\centering
@@ -168,7 +165,7 @@ Eight different measurements were taken for each amphorae sample of the 5 worksh
 \begin{figure}[htp]
 	\centering
 \includegraphics[scale=0.10]{mesures.png}
-\caption{Example of the 8 measurements taken for the sample in order to provide morphometric data. A: external diameter. B: inside diameter. C: Rim height. D: Rim width. E: shape width. F: rim inside height. G: rim width 2. H: protruding rim}
+\caption{Example of the 8 measurements taken for the sample in order to provide morphometric data. A: External diameter. B: Inside diameter. C: Rim height. D: Rim width. E: Shape width. F: Rim inside height. G: Rim width 2. H: Protruding rim}
 \label{mesures}
 \end{figure} 
 
@@ -190,18 +187,14 @@ We also generate a Confusion Matrix (CM) to be able of quantifying the degree of
 
 %\xavi{El parrafo es un poco caotico. Mira otros papers para ver un poco como organizarlo mejor si puedes. Por ejemplo, no hace falta que menciones la distancia espacial hasta el final, porque en el LDA y el PCa no se usa esa distancia para nada. Quizas una subsection final sobre comparacion de distancias?}
 
-\subsection{Distance}
+\subsection{Spatial Distance}
 
-The morphometric distance generated with the results of DA will be compared with the geographical distance to prove if it exists a correlation between each other. Euclidean distance will be used to measure the distance among workshops. We think that workshops with a result of morphometric distance minor would be closer in spatial distance. 
-
-
-\maria{explicar mejor la ultima parte}
-
+The morphometric distance generated with the results of DA will be compared with the geographical distance to prove if it exists a correlation between each other. Euclidean distance will be used to measure the distance among workshops. We propose that workshops with a minor result of morphometric distance would be closer in spatial distance. 
 
 \section{Results}
 
 The morphometric variation was analysed in amphorae production to quantify the technical differences on the pattern production among workshops. 
-The analysis of PCA produces a set of values for each variable observed. Variables show how much variability exist in the dataset grouped by each principal components. The results, indicated in the Table~\ref{table:variable}, show the most differences were focused on the protruding rim and rim width 2. 
+The analysis of PCA produces a set of values for each variable observed. Variables show how much variability exist in the dataset grouped by each principal components. The results, indicated in the Table~\ref{table:variable}, show the most differences were focused on the protruding rim. 
 
 \begin{table}[htp]
 \begin{tabular}{lcccccccc}
@@ -217,11 +210,11 @@ The analysis of PCA produces a set of values for each variable observed. Variabl
 Protruding rim& \textbf{0.989} &      &      &     &     &     &     &          \\
 \hline
 \end{tabular}
-\caption{Result of the 8 principal components. Variability was concentrated in the first principal component.}
+\caption{Result of the 8 principal components. More variability was concentrated in the first principal component.}
 \label{table:variable}
 \end{table}
 
-The patterns observed in the first two Principal Components were plotted to visualize the degree of variation by isolation among workshops. The results suggested that amphorae from closer workshops tend to be more similar than amphorae made in furthest workshops. In particular, the Fig \ref{pca} illustrates how the four closest workshops show variation on PC1 (i.e. Bel\'en, Delicias, Villaseca and Malpica) while Parlamento displays a distinctive pattern than the rest of workshops on PC2 values. 
+The patterns observed in the first two Principal Components were plotted to visualize the degree of variation by isolation among workshops. The results suggested that amphorae from closer workshops tend to be more similar than amphorae made in furthest workshops. In particular, the Fig \ref{pca} illustrates how the four closest workshops show variation on PC1 (i.e. Bel\'en, Las Delicias, Villaseca and Malpica) while Parlamento displays a distinctive pattern than the rest of workshops on PC2 values. 
 
 \begin{figure}[htp]
 	\centering
@@ -244,7 +237,7 @@ Cumulative  &0.5747347&0.7412043&0.83330433&0.8929634&0.94144509&     &     &   
 \label{table:spatgeo}
 \end{table}
 
-Discriminant Analysis was used to analyse the results obtained from PCA.  A training dataset used in PCA was analysed assuming the workshops as 5 groups ("belen", "delicias", "malpica", "parlamento" and "villaseca") For the analysis, a total of 93 were correctly classified while 113 were incorrectly classified, as shown the Fig \ref{prediction}. The results showed a similarity in three groups (belen, malpica and villaseca) while two groups depicted a different pattern (delicias and parlamento). This could be caused by the geographical proximity, being Parlamento and Delicias both workshops with the distance more farther than rest of workshops. 
+Discriminant Analysis was used to analyse the results obtained from PCA.  A training dataset used in PCA was analysed assuming the workshops as 5 groups ("belen", "delicias", "malpica", "parlamento" and "villaseca") For the analysis, a total of 93 were correctly classified while 113 were incorrectly classified, as shown the Fig \ref{prediction}. The results showed a similarity in three groups (Bel\'en, Malpica and Villaseca) while two groups depicted a different pattern (Las Delicias and Parlamento). This could be caused by the geographical proximity, being Parlamento and Las Delicias both workshops with the distance more farther than rest of workshops. 
 
 \begin{figure}[htp]
 	\centering
@@ -258,8 +251,8 @@ The results of Confusion Matrix proved that workshops with a minor geographical 
 \begin{table}[htp]
 \begin{tabular}{lccccc}
 \hline
-      & Belen & Delicias & Malpica & Parlamento & Villaseca\\ \hline
-Belen &   31  &      6   &   12    &     11     &   13 \\
+      & Bel\'en & Delicias & Malpica & Parlamento & Villaseca\\ \hline
+Bel\'en &   31  &      6   &   12    &     11     &   13 \\
 Delicias&  2  &     27   &    6    &     13     &    1  \\
 Malpica &  6  &      4   &   16    &      2     &   13   \\
 Parlamento & 3&      2   &   3     &      14    &    6    \\
@@ -267,7 +260,7 @@ Villaseca  & 0&      3   &    5    &      2     &    9     \\
 \hline
 
 \end{tabular}
-\caption{Confusion Matrix with rows pointing out the workshops analysed. The sample analyzed gave an accuracy percentage of 46.19 $\%$. Results of P.Value $<$0.01. }
+\caption{Confusion Matrix with rows pointing out the workshops analysed. The sample analysed gave an accuracy percentage of 46.19 $\%$. Results of P.Value $<$0.01. }
 \label{table:confusion}
 \end{table}
 
@@ -276,14 +269,14 @@ Villaseca  & 0&      3   &    5    &      2     &    9     \\
 We compared morphometric and spatial distance by performing peer-to-peer analysis between all the workshops. We calculated the geographical distance generated by the Euclidean distance between each site and the distance among amphora measurements, calculated using the previous results. The workshops were chosen with different distance in order to prove the correlation between spatial distance and variability of the amphora production techniques. Distance Matrix (see Table~\ref{table:spatialdistance}) shows the results of the analysis of morphometric distance. 
 
 
-The workshops with morphometric distances lower tended to be more similar than the rest. The results of the analysis were compared with the real geographic distance, shown in the Fig~\ref{spatgeo}. Here, morphometric distance of the amphorae are strongly correlated with the spatial distance of workshops. When geographic distance is low, as the example of Belen and Malpica, the morphometric distance seems more similar whereas when distance is higher, as Parlamento, the morphometric distance displays differences with the rest of workshops. Thus, the results suggest that the variability on the making-techniques processes might depend on the spatial distance.  
+The workshops with morphometric distances lower tended to be more similar than the rest. The results of the analysis were compared with the real geographic distance, shown in the Fig~\ref{spatgeo}. Here, morphometric distance of the amphorae are strongly correlated with the spatial distance of workshops. When geographic distance is low, as the example of Bel\'en and Malpica, the morphometric distance seems more similar whereas when distance is higher, as Parlamento, the morphometric distance displays differences with the rest of workshops. Thus, the results suggest that the variability on the making-techniques processes might depend on the spatial distance.  
 
 
 \begin{table}[htp]
 \begin{tabular}{lccccc}
 \hline
-        & Belen   &   Delicias & Malpica & Parlamento & Villaseca\\ \hline
-Belen   &         &   0.8409091&0.7272727&0.7857143   &0.7169811  \\
+        & Bel\'en   &   Delicias & Malpica & Parlamento & Villaseca\\ \hline
+Bel\'en   &         &   0.8409091&0.7272727&0.7857143   &0.7169811  \\
 Delicias&0.8409091&            &0.7522523&0.7023810   &0.8018868   \\
 Malpica &0.7272727&0.7522523   &         &0.7142857   &0.6509434    \\
 Parlamento&0.7857143&0.7023810&0.7142857&            &0.7380952     \\
@@ -298,7 +291,7 @@ Villaseca&0.7169811&0.8018868&0.6509434&0.7380952    &                \\
 \begin{figure}[htp]
 	\centering
 \includegraphics[scale=0.60]{spatgeo.pdf}
-\caption{Plot with the results of the comparison between morphometric distance and spatial distance (km)}
+\caption{Plot with the results of the comparison between morphometric distance (distpottery) and spatial distance (distgeo) in km}
 \label{spatgeo}
 \end{figure} 
 
@@ -348,13 +341,10 @@ We have identified measurable differences in the techniques by observing and we 
 
 \section{Acknowledgments}
 
-The research was funded by European Research Council Advanced Grant EPNet (340828). We are grateful to Enrique Garc\'ia-Vargas, ETC. Data were collected and performed and analysed in R version 3.2.4. statistical language and implemented with the package MASS. Map was done by CARTO. 
+The research was funded by European Research Council Advanced Grant EPNet (340828). We are grateful to Enrique Garc\'ia-Vargas, ETC. The Museum of \'Ecija (Antonio Fern\'andez Ugalde), Museum of Palma del R\'io (Reyes Lopera and Emilio Navarro), Museum of C\'ordoba and Museum of Seville for kindly allowing us access to their information.  
+Data were collected and performed and analysed in R version 3.2.4. statistical language and implemented with the package MASS. Map was done by CARTO. 
 \maria{incluir la url con los datos y el código and citation needed}
 
-
-%\section{Bibliography styles}
-
-%There are various bibliography styles available. You can select the style of your choice in the preamble of this document. These styles are Elsevier styles based on standard styles like Harvard and Vancouver. Please use Bib\TeX\ to generate your bibliography and include DOIs whenever available.
 
 \section*{References}
 
