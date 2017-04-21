@@ -350,6 +350,36 @@ pdf('plot_dists.pdf')
 ggplot(foo, aes(x=distpottery, y=distgeo)) + geom_point(aes(shape=from, col=to), size=3)
 dev.off()
 
+###glind both options ###
+
+
+g1 <- ggplot(foo, aes(x=from, y=distgeo)) + geom_point(aes(col=to), size=3)
+
+g2 <- ggplot(foo, aes(x=from, y=distpottery)) + geom_point(aes(col=to), size=3)
+
+pdf('distgeopott.pdf')
+grid.arrange(arrangeGrob(g2,g1), heights=c(1/3, 1/3))
+dev.off()
+
+pdf('distgeopott.pdf')
+grid.arrange(arrangeGrob(g2,g1))
+dev.off()
+
+
+##without taking into account from and to (using auto method) 
+
+pdf('smooth.pdf')
+ggplot(foo, aes(x=distpottery, y=distgeo)) + geom_point(size=3) + geom_smooth(method= "auto")
+dev.off()
+
+##more examples with geom_smooth
+
+pdf('smooth3.pdf')
+ggplot(foo, aes(x=distgeo, y=distpottery)) + geom_point(size=3) + geom_smooth(method= "glm")
+dev.off()
+
+
+
 #########DISTANCE MEASUREMENT AND PLOT FROM XAVI RUBIO DATA ##############################
 
 library(ggplot2)
