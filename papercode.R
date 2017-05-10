@@ -412,3 +412,18 @@ pdf('pcs.pdf', width=12, height=4)
 grid.arrange(arrangeGrob(g2,g1,heights=c(2/3, 1/3)))
 dev.off()
 
+
+####TESTING WITH MANTEL TEST#########
+
+library('vegan')
+
+#first you have to convert your database in a matrix between each things that you can use. In our case, we use distgeo and distpottery and we have to convert in a matrix. 
+
+alld=read.csv("distmetrics.csv")
+
+distg=as.dist(xtabs(alld[, "distgeo"] ~ alld[, "from"] + alld[, "to"]))
+
+distpot=as.dist(xtabs(alld[, "distpottery"] ~ alld[, "from"] + alld[, "to"]))
+
+mantel(distg,distpot)
+
