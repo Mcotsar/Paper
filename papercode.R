@@ -416,14 +416,38 @@ dev.off()
 ####TESTING WITH MANTEL TEST#########
 
 library('vegan')
-
 #first you have to convert your database in a matrix between each things that you can use. In our case, we use distgeo and distpottery and we have to convert in a matrix. 
-
 alld=read.csv("distmetrics.csv")
 
-distg=as.dist(xtabs(alld[, "distgeo"] ~ alld[, "from"] + alld[, "to"]))
-
-distpot=as.dist(xtabs(alld[, "distpottery"] ~ alld[, "from"] + alld[, "to"]))
-
+distg=as.dist(xtabs(alld[, "distgeo"] ~ alld[, "from"] + alld[, "to"]), diag=T)
+distpot=1-as.dist(xtabs(alld[, "distpottery"] ~ alld[, "from"] + alld[, "to"]), diag=T)
 mantel(distg,distpot)
+
+#testing with Confusion Matrix
+
+distg=as.dist(xtabs(alld[, "distgeo"] ~ alld[, "from"] + alld[, "to"]), diag=T)
+distpot=1-as.dist(xtabs(alld[, "confusion"] ~ alld[, "from"] + alld[, "to"]), diag=T)
+mantel(distg,distpot)
+
+#Other way to testing with Confusion Matrix
+
+alld2=read.csv("distmetrics.csv")
+# move to 0/1 interval
+alld2$normConfusion = (max(alld2$confusion)-alld2$confusion)/(max(alld2$confusion)-min(alld2$confusion))
+
+distg2=as.dist(xtabs(alld2[, "distgeo"] ~ alld2[, "from"] + alld2[, "to"]))
+distpot2=as.dist(xtabs(alld2[, "normConfusion"] ~ alld2[, "from"] + alld2[, "to"]))
+mantel(distg2,distpot2)
+
+
+
+
+
+
+
+
+
+
+
+
 
