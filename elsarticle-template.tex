@@ -2,6 +2,7 @@
 \documentclass[review]{elsarticle}
 \usepackage{hyperref,lineno}
 \usepackage{xcolor}
+\usepackage[utf8]{inputenc}
 \modulolinenumbers[5]
 
 \newcommand{\memo}[2]{\textcolor{#1}{#2}}
@@ -45,9 +46,7 @@
 
 \begin{frontmatter}
 
-\title{Identifying links between amphorae workshops through morphometric similarity within the Roman Empire \tnoteref{mytitlenote}}
-
-%\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+\title{Identifying social learning between Roman amphorae workshops through morphometric similarity}
 
 %% Group authors per affiliation:
 %\author{Mar\'ia Coto-Sarmiento\fnref{myfootnot}}
@@ -69,20 +68,21 @@
 %\author[mysecondaryaddress]{Maria Coto-Sarmiento\corref{mycorrespondingauthor}}
 
 \address[bscadress]{Barcelona Supercomputing Center (BSC), Jordi Girona 29, Office 3A, Nexus II Building, 08034, Barcelona, Spain}
-\address[edadress]{School of Histories, Classic \& Archaeology, Room OOM.22, William Robertson Wing, Old Medical School, Teviot Place, University of Edinburgh, UK}
+\address[edadress]{School of History, Classic \& Archaeology, Room OOM.33, William Robertson Wing, Old Medical School, Teviot Place, University of Edinburgh, UK}
 \address[ceipacadress]{CEIPAC, Department of Prehistory and Archaeology, Montalegre, 6-8, 08001, University of Barcelona, Barcelona, Spain}
 
 \begin{abstract}
 
-The aim of this study is to analyse social learning patterns within amphorae production among workshops in the Roman Empire. Cultural Evolution is applied to understand the effect that this production might have on the evolution of social learning of potters. This analysis can be developed by the fact that we detect differences in the amphorae production through time and space that they might explain this dynamic of change. However, different debates revolve around how individuals or groups acquired and transmitted technical skills. In addition, this challenge is combined with the problem of detecting different modes of transmission in the archaeological record. In archaeology, several studies have analysed these processes focused on the handmade production techniques of pottery. In our case, we want to discover if these processes could be similar with a more standardized production. 
+The aim of this study is to identify interactive dynamics within amphorae workshops in the Roman Empire. The \textit{Baetica} province (currently Andalusia, southern Spain) hosted for almost 300 years a massive infrastructure that supplied olive oil to the Western provinces of Rome. A large number of workshops produced the same type of amphora to ship the product through maritime and riverine transport networks. Despite the amount of evidence it is difficult to find an archaeological proxy able to tell us how were these workshops organised.
 
-Our main case study has been focused to understand the production dynamics of olive oil amphorae located in \textit{Baetica} province (currently Andalusia, south Spain) during the Roman Empire (1st-3rd century AD). In particular, multivariate statistical methods have been applied to distinguish assemblages among different kinds of amphora shapes that it could serve to detect different patterns in the production techniques among workshops. Specifically, we want to identify if these changes might have been influenced by cultural reasons or other cultural constraints.
+We apply here an evolutionary framework to understand potential links between workshops through morphometric similarities in the amphorae they produced. By exploring small yet statistical significant differences in the amphorae made in 5 different workshops the approach is able to identify how individual potters acquired and transmitted technical skills.  Our approach applies multivariate statistical methods to cluster a variety of amphorae based on morphometric measurements. Other studies have developed similar approach to analyse handmade pottery but we show here that the method can be also applied to large-scale production of a standardized amphora type (i.e. Dressel 20).
 
-The analysis explores how cultural evolution provides a strong baseline for the interpretation of the cultural pattern. Finally, the results suggest that different factors as spatial distance can influence in the production processes. 
+Results suggest that morphometric similarity is inversely correlated with spatial distance between workshops. This outcome suggests that pottery-making techniques were transmited through vertical transmission with little or no movement of potters between distant workshops. The work also highlights that morphometric similarity may be an effective proxy to identify social learning dynamics even amongst workshops producing exactly the same amphoric type. 
 
 \end{abstract}
 
-\begin{keyword}Cultural Evolution, Roman Empire, amphorae production, social learning
+\begin{keyword}
+Roman Empire, amphorae, Dressel 20, social learning, cultural evolution
 \end{keyword}
 
 \end{frontmatter}
@@ -117,227 +117,164 @@ The analysis explores how cultural evolution provides a strong baseline for the 
 
 \section{Introduction}
 
-Material culture allows to understand a part of the mechanism of the human behavior \citep{richerson2005not, schillinger_copying_2016}. We can observe cultural patterns through material culture which can explain how the culture evolves \citep{richerson2005not}. This mechanism can be analysed by the study of variability on material culture which can help us detect social learning patterns as, for example, how to teach and make an amphora. In archaeology, the detection of these patterns in the archaeological records could also explain whether these changes are produced by cultural reasons which varying over time and space \citep{basalla1988evolution}. As a result, different information is shared by social learning generating an accumulation of knowledge transmitted from generation to generation in different conditions of context and content. \citep{eerkens_jelmer_cultural_2005, neff1992ceramics,henrich_evolution_2003, boyd_cultural_2011}. In any case, the mode of learning transmission along with several external conditions might affect directly or indirectly the pattern of manufacturing of the artefacts.
-Moreover the detection of these patterns can result more significant in large-scale pottery productions when this production is increasing to satisfy the demand of more complex societies, as the case of Roman Empire. This huge of production allows us to distinguish some morphometrical variations to understand a part of the economic dynamic of Empire. 
+The archaeological record can help us identify the mechanisms by which humans learn from each other~\citep{richerson2005not,schillinger_copying_2016}. Cultural transmission dynamics can be identified by analysing archaeological proxies able to capture the distinct variability generated by different social learning mechanisms~\citep{shennan_ceramic_2001,eerkens_jelmer_cultural_2005}. This approach has been succesfully applied to the material culture generated by small-scale societies but it has been seldom explored in the case of large-scale production~\citep{shennan_isolation-by-distance_2015,neff1992ceramics}.
 
-This paper explorses the change in the production processes during the Roman Empire. In particular, our study is focused on understanding the pottery-making techniques by analysing large-scale amphorae production in a specific area. In this case, an evolutionary framework \citep{mesoudi_cultural_2015, shennan_evolution_2008} is used for studying the implication and the impact that this production might involve on the evolution of social learning processes. Within evolutionary perspective, social learning is analysed to understand the production mechanisms in amphorae. Specifically, the aim of this study is understanding how the amphorae production were organized and whether it can be possible to identify amphorae made in different workshops. Our main hypothesis concerns about understanding the modes of transmission of pottery-making techniques and how those techniques could have been transmitted in time and space. 
+This paper explores the social dynamics of specialized production in the Roman Empire. Wwe focus here on analysing large-scale production of a single amphoric type (Dressel 20) in a specific area. An evolutionary framework has been used to identify social learning dynamics between pottery-makers \citep{mesoudi_cultural_2015, shennan_evolution_2008}. Following a large number of authors \citep{cavalli-sforza_cultural_1981, hosfield_modes_2009}, pottery production can be learned on different modes of cultural transmission depending on the level of production in the communities. Vertical transmission is a mode of transmission when the teaching of the production is done from master to disciple while in horizontal transmission individuals teach pottery techniques to other individuals within the same level and those workers spread the knowledge to their community \citep{epstein_craft_1998}.
 
-Following a large number of authors \citep{cavalli-sforza_cultural_1981, hosfield_modes_2009}, pottery production can be learned on different modes of cultural transmission depending on the level of production in the communities. Vertical transmission is a mode of transmission when the teaching of the production is done from master to disciple while in horizontal transmission individuals teach pottery techniques to other individuals within the same level and those workers spread the knowledge to their community \citep{epstein_craft_1998}
-
-In material culture, artefact variation may be also affected by geographical distance \citep{bjorklund_effect_2010,shennan_isolation-by-distance_2015, van_strien_isolation-by-distance_2015} where material culture is more similar in closer populations who interacted each other whereas in other cases the correlation between both seems not visible due to different factors \citep{hart_effects_2012}. 
+Artefact variation should also be affected by geographical distance \citep{bjorklund_effect_2010,shennan_isolation-by-distance_2015, van_strien_isolation-by-distance_2015}. If vertical transmission is predominant then culture should be similar in nearby groups with high degrees of interaction \citep{hart_effects_2012}. The underlying consequence is that it should be possible to identify interaction between workshops by quantifying similarity amongst the amphorae they produced; if apprentices moved between distant workshops then no differences would be found on this proxy while a more strict vertical transmission would be revealed by distant workshops exhibiting less similarity.
 
 
 %Specifically, the aim of this study is understanding if pottery-making techniques were transmitted through vertical or horizontal social learning. Our main hypothesis concerns the transmission of the techniques by vertical transmission and how vertical transmission is spreading in time and space. These technological knowledges could have been transmitted from master to disciple and thus continuously. If vertical transmission predominates in this process over horizontal transmission then amphorae made in nearby workshops might share more similar traits than amphorae made from farthest workshop. Otherwise whether horizontal transmission is the main transmission in this process the social learning would be transmitted by workers. Then there would not be differences among workshops on the production. The artefact variation can be related to the geographical distance \citep{bjorklund_effect_2010,shennan_isolation-by-distance_2015, van_strien_isolation-by-distance_2015}. In material culture, artefact variation might be affected by geographical distance where material culture is more similar in close population who interacted each other. In other case, the correlation between both seems not visible due to different factors \citep{hart_effects_2012}. In our case, we can detect measurable differences among this type of amphorae correlated with the geographical distance.
 
-However, different debates revolve around how individuals or groups acquired and transmitted technical skills \citep{bowser_learning_2008, mesoudi_cultural_2008}. In addition, this challenge is combined with the difficulty of detecting the different modes of transmission in the archaeological record \citep{roux_standardization_2015}. In the case of archaeology, several studies have analysed this process focused on the production of handmade pottery \citep{steele_james_ceramic_2010} or with stylistic variations \citep{neiman_stylistic_1995, shennan_ceramic_2001}.
-Specifically our work pretends to inquire whether learning processes could be similar with a more standardized and massive production \citep{gandon_copying_2014}, related to the case of pottery production in the Roman Empire. In this work we have explored the transmission of these processes associated with amphorae production through a combination of empirical analysis and multivariate statistics.
-                     
-The paper can be sketched as follows. The next section introduces the case study and existing hypotheses, the third section will illustrate about the methods that we have applied to analyse our case study, the next section will deal about the results; and finally we highlight with a discussion about our results.  
+The debate on social learning processes is hindered by the challenge of detecting the different modes of transmission in the archaeological record \citep{roux_standardization_2015}. In the case of archaeology, several studies have analysed this process focused on the production of handmade pottery \citep{steele_james_ceramic_2010} or with stylistic variations \citep{neiman_stylistic_1995, shennan_ceramic_2001}. Our work aims at identifying learning processes even in the case of the standardized massive olive oil production common during the Roman Empire \citep{gandon_copying_2014,bevan_mediterranean_2014}. 
 
+Olive oil was one of the most important products of the Classical Mediterranean world as it was used in almost all aspects of daily life including cooking, lightning and hygiene \citep{mattingly_d.j._oil_1988}. The \emph{Baetica} province (currently Andalusia, southern Spain) developed a massive infrastructure of olive oil production to face the demands of the Roman Empire. The product was shipped in large amounts of amphorae to distant provinces all along the Western provinces. One of its most important clients was the Roman army as olive oil was supplied to tens of thousands of legionaries in places such as Britania \citep{funari_economic_2005, monfort_britannia_1998} and Germania \citep{remesal_annona_1986}. 
 
-\section{The amphoric production in Roman Baetica}
+For this reason, this ancient province became an important support for the production and distribution of olive oil to the rest of the Empire during three centuries \citep{chic2005comercio, millet_anforas_1998, rodriguez_baetican_1998}. \emph{Baetica} provided a strong connectivity through riverine transport that allowed inland producers to use an important trade network through the Mediterranean and Atlantic \citep{garcia_vargas_enrique_formal_2010}. The exponential production growth required the creation of over a hundred amphora workshops supporting olive oil shipment. These workshops were located along the Guadalquivir river and its tributaries. The majority of amphorae produced in this area are classified as \emph{Dressel 20} type divided into a variety of subclasses \citep{berni_millet_epigrafianforica_2008, martin-kilcher_romischen_1994}. Dressel 20 were used mostly to transport olive oil for around 300 years in order to satisfy the demand within Roman Empire \citep{rodriguez_economioleicola_1977}. 
 
-Our case study examines the variation of the amphorae production located in \emph{Baetica} province (currently Andalusia, south Spain). During the Roman Empire, a large-scale infrastructure of amphorae production was developed around this area to supply the provinces of the Empire, with a huge impact during the supplying of the Roman army in places such as Britania \citep{funari_economic_2005, monfort_britannia_1998} or Germania \citep{remesal_annona_1986}. 
+% For example, Dressel 20 amphora often displayed a stamp identifying an economic actor involved in the production \citep{coto-sarmiento_maria_bayesian_????}.
+This specialized production was highly standardized both in terms of products and processes and did not vary much. The same type of amphora was produced over 300 years with small differences while similar stamps and information was recorded on them \cite{coto-sarmiento_maria_bayesian_????}. Despite our knowledge of the process little is known on how learning was organised in these workshops. Did they have different traditions and apprentices worked in the place where they were trained? Did potters work in more than one workshop? Were changes in production decided by workshops or by external actors? All these questions are linked to the social learning processes that took place in the workshops. If the system was organised based on vertical transmission mechanisms with no potters moving to distant workshops then amphorae produced in nearby workshops might share more similar traits than with the rest of the production. On the other hand, if horizontal dynamics were common then this correlation with spatial coordinates should not be present as workers would share their methods \citep{hosfield_modes_2009}. 
 
-For this reason, this ancient province became an important support for the production and distribution of olive oil to the rest of the Empire
-during three centuries
-%from Ist to IIIrd centuries 
-\citep{chic2005comercio, millet_anforas_1998, rodriguez_baetican_1998}. \emph{Baetica} had also a strong connection thought rivers that allowed developing an important trade network mostly around the Mediterranean and Atlantic \citep{garcia_vargas_enrique_formal_2010}. As a result of this growth in size, almost a hundred of pottery workshops were currently located along the Guadalquivir river and its tributaries. The majority of amphorae produced in this area belong to \emph{Dressel 20} divided into different typologies, according with different authors \citep{berni_millet_epigrafianforica_2008, martin-kilcher_romischen_1994}. 
-This amphora type was used mostly to transport olive oil for around 300 years in order to satisfy the demand within Roman Empire \citep{rodriguez_economioleicola_1977}. In particular, olive oil was a significant product frequently used in different aspect of the Roman daily life such as consumption, lighting and hygiene \citep{mattingly_d.j._oil_1988}. 
-
-%more than 90 (from Mauné source)
-
-The importance of this commerce is also showed by the fact that Dressel 20 amphora production was identified with different marks about its provenance although the meaning of the actors in this process seems not clear \citep{coto-sarmiento_maria_bayesian_????}. Thus, amphora production was a particular example of production strategy that experimented few changes around three centuries. In any case, our main question will be related to understand how the amphora workshops were organized in \textit{Baetica} area and the transmission of the production techniques by potters. Thereby, our hypothesis revolves around technological knowledge could have been vertically transmitted when production techniques are learned from master to apprentice providing technical skills. When vertical transmission predominates in this process over horizontal transmission then amphorae made in nearby workshops might share more similar traits than amphorae made from farthest workshops. Otherwise if horizontal transmission is the main transmission in this process the social learning of these techniques would be transmitted by workers \citep{hosfield_modes_2009}. Then there would not be differences among workshops on the production. In our case, we can detect measurable differences among this type of amphorae correlated with the spatial distance.
-
+The paper can be summarized as follows. The next section introduces the dataset and the methods used to analyse it. Section three presents the results while the last part discusses the outcomes and highlights the main conclusions of the work. 
 
 \section{Material and methods}
 
-We collected a dataset of 470 amphorae from 5 different workshops excavated in order to identify the social learning process that tooks place in the case study. The workshops were located in Malpica (Palma del R\'io, C\'ordoba), Cerro del Bel\'en (Palma del R\'io, C\'ordoba)(hereafter, Bel\'en) \citep{diaz_trujillo_excavacion_1992}, Parlamento (Sevilla) \citep{garcia_vargas_anforas_2000}, Villaseca (C\'ordoba)\citep{garcia_vargas_enrique_excavacion_????} and Las Delicias (\'Ecija, Sevilla) \citep{fernandez_excavacion_2001,_atelier_2014} (see map \ref{romanworkshop}).
+\subsection{Workshops}
+
+Our sample consisted of 413 Dressel 20 amphorae collected from the 5 Dressel 20 workshops that have been more intensively excavated in the last 4 decades. The workshops were located at Malpica, Cerro del Belén (hereafter, Belén) \citep{diaz_trujillo_excavacion_1992}, Parlamento \citep{garcia_vargas_anforas_2000}, Villaseca\citep{garcia_vargas_enrique_excavacion_????} and Las Delicias \citep{fernandez_excavacion_2001,_atelier_2014} (see Figure \ref{romanworkshop}).
 
 \begin{figure}[htp]
 	\centering
-\includegraphics[scale=0.30]{romanworkshop.pdf}
-\caption{Map from \textit{Baetica} province during the Roman Empire. Dressel 20 workshops were mostly distributed along the rivers Gualdalquivir and Genil. Location of the five workshops analysed in this area.}
+\includegraphics[width=\linewidth]{figs/romanworkshop}
+\caption{Map from \textit{Baetica} province during the Roman Empire depicting the location of the 5 analyzed workshops. Dressel 20 workshops were mostly distributed along the rivers Gualdalquivir and Genil.}
 \label{romanworkshop}
 \end{figure} 
 
-We created a dataset where were selected 413 amphorae related to the selected chronology, approximately 80-100 samples of each pottery workshops. The choice of these workshops corresponded to several reasons. Firstly, the workshops were selected from different spaces in order to analyse the production patterns depending on the distance of each workshop. Secondly, the extended chronology of these workshops serves as proxy to examine changes on the variation shape. In our case, the type Dressel 20 did not experiment especially visible changes on the production pattern during almost three centuries \citep{berni_dressel_2016}. Finally, the workshops selected had been excavated in extension and provided a large number of materials.   
-
-Eight different measurements were taken for each amphorae sample of the 5 workshops studied. The measurements were focused on the rim sherds whose fragments were the most preserved on the archaeological sample. In the case of pottery attributes, rim sherds and the curvature of handles work as useful indicators of variability \citep{berni_millet_epigrafianforica_2008}. The measurements were divided into exterior diameter, inside diameter, rim height, rim width, shape width, rim inside height, rim width 2 and protruding rim, as the Fig~\ref{mesures} indicates. The method required a large sample size and for this reason the test was focused on rim sherds. Other significant parts such as handles and bases were found in lesser quantities thus compromising the applicability of the method due to small sample size.
-
-\begin{figure}[htp]
-	\centering
-\includegraphics[scale=0.10]{mesures.png}
-\caption{Example of the 8 measurements taken for the sample in order to provide morphometric data. A: External diameter. B: Inside diameter. C: Rim height. D: Rim width. E: Shape width. F: Rim inside height. G: Rim width 2. H: Protruding rim}
-\label{mesures}
-\end{figure} 
-
-In our study, we have selected three variants according to three centuries (Dressel C, Dressel D, Dressel E). Without important variations in three centuries, the chronology responds to a relative dating obtained by the classification identified on amphora shapes in different studies defined by P. Berni \citep{berni_millet_epigrafianforica_2008} and Martin Kilcher \citep{martin-kilcher_romischen_1994}. All of the variants selected were found in excavations from the workshops studied in order to avoid some material which can contaminate the sample. For the proposal of this study, the rest of variants were not taken into account from our study by not having enough material for the analysis. 
-
-\subsection{Principal Component Analysis}
-
-The sample selected was analysed using statistical method such as Principal Component Analysis and Discriminant Analysis to explore these metrical differences on the rim sherds. We used Principal Component Analysis (PCA) to simplify the large number of variables in our dataset. This method allows to capture the most of variation from our dataset and create a reduced number of new variables without losing relevant information \citep{jolliffe_principal_2002, shennan_quantifying_1997}. Moreover the new set of variables contain all the data information expressed as the result of the most variance from the original variables. This method is commonly used in archaeology for the study of the variation of material culture \citep{li_crossbows_2014, schillinger_differences_2016}. In order to apply a degree of uniformity, we created a training dataset of 210 samples. In our study, PCA allowed to capture the most variation of the measurement and retained into first two principal components. 
-
-%The new set of variables contain all the relevant information of the previous variables without losing relevance. The first principal components are expressed as the result of the most variance of the all information from the original variables. Moreover the information is expressed as the result of most variation retained in the first principal components \citep{jolliffe_principal_2002, shennan_quantifying_1997}. of the measurements and  into PCs and take the first PCA with more variability in the dataset. 
-
-\subsection{Discriminant Linear Analysis} 
-
-The variability of the first two principal components was used to cluster our dataset using Linear Discriminant Analysis (LDA). LDA will be conducted to find significant technical differences by the combination among variables obtained for the first principal components. LDA identifies which variables allow to distinguish each group and how many variables are necessary to achieve the best combination as possible. Thus, LDA is used to explore a better separate training dataset from the results of the most relevant principal components. In our dataset, the first components produced by the amphora measurements are grouped into each workshop groups and are separated to obtain a better discrimination among groups. 
-We also generate a Confusion Matrix (CM) to be able of quantifying the degree of confusion and compare the index of similarity among workshops.  CM calculated the probability of success and error of the results. It generates a matrix where higher value is the result of an incorrect classification. As example, this method has been commonly used to detect differences in artefact production \citep{charlton_investigating_2012, thorpe_distribution_1984}, and particularly for a similar study about pottery production in \emph{Tarraconense} \citep{i_martin_alisis_1998}
-
-
-%The variability of the first 2 Principal Components was used to cluster our dataset using Linear Discriminant Analysis (LDA). LDA was conducted to find significant differences among workshops by the combination among variables obtained for the first principal components. LDA identifies which variables allow to distinguish or discriminate each group and how many variables are necessary to achieve the best combination as possible. In our case, this method allowed to demonstrate the correlation between spatial distance and distance among workshops. LDA was used to explore a better separate training set from the results of the most relevant principal components. LDA can classify the PCs result of the measurements into different groups.  We also generate a Confusion Matrix (CM) to able of quantifying the degree of confusion and compare the index of similarity among workshops.  CM calculated the probability of success and error of the results. It generates a matrix where higher value are the results of an incorrect classification. The distance generated with the results of DA will be compared with the spatial distance to see if it exists a correlation between morphometric distance and spatial distance. As example, this method has been commonly used to detect differences in artifact production \citep{charlton_investigating_2012, thorpe_distribution_1984}, and particularly for a similar study about the production pottery in \emph{Tarraconense} \citep{i_martin_alisis_1998}
-
+The sample was roughly uniformly distributed amongst the 5 workshops (80-100 samples for each of them). These workshops were located a diversity of locations so spatial dynamics could be potentially identified. All of them had overlapping long chronologies so differences in amphorae could not be inherently explained by temporal variation. This trait is reinforced by the fact that the Dressel 20 type did not show any remarkable change in shape for almost three centuries \citep{berni_dressel_2016}. We analyzed Dressel 20 of the three most abundant variants spanning three centuries (Dressel C, Dressel D, Dressel E) \citep{berni_millet_epigrafianforica_2008,martin-kilcher_romischen_1994}. All the variants were found in the 5 workshops so no intrinsic bias was generated by them.
 
 \subsection{Spatial Distance}
 
-The morphometric distance generated with the results of CM will be compared with the spatial distance to prove if it exists a correlation between each other. Euclidean distance will be used to measure the distance among workshops. We also analysed the potential correlation between morphometric and spatial distance by performing with Mantel test among all the workshops. Mantel test is a statistical method used to evaluate the association between cultural diversities with geographical distance when the distance can be related and dependent from each other \citep{mantel_detection_1967, diniz-filho_mantel_2013}. This method has been particularly used in archaeology to test the correlation between cultural constrains and spatial distance \citep{crema_culture_2014}.  
+The approach required us to compute a pairwise matrix of spatial distances between workshops. All these workshops were located near a river as the amphorae were shipped by boat after being made and filled with olive oil. Given the relevance of riverine transport it was decided that the best proxy for spatial distance between workshops was the one observed following the river course, as summarized in Table~\ref{table:distances}
 
+\begin{table}[htp]
+\centering
+
+\begin{tabular}{lccccc}
+\hline
+
+\textbf{Workshops} & Malpica & Belén & Villaseca & Las Delicias & Parlamento \\ \hline
+Malpica & - & 11 & 50 & 17 & 108 \\
+Belén & 11 & - & 33 & 29 & 98 \\
+Villaseca & 50 & 33 & - & 67 & 133 \\
+Las Delicias & 17 & 29 & 67 & - & 126 \\
+Parlamento & 108 & 98 & 133 & 126 & - \\
+\hline
+\end{tabular}
+\caption{Distance matrix between workshops (in km.)}
+\label{table:distances}
+\end{table}
+
+\subsection{Measurements}
+
+Eight different measurements were taken from each amphora. The metrics were focused on the rim sherds as this section presents the best preservation for most archaeological contexts and they present good indicators of variation \citep{berni_millet_epigrafianforica_2008}. Other interesting proxiies such as handles and bases were found in lesser quantities and for this reason they would be less useful for quantitative approaches due to low sample size. The measurements can be seen in Figureg~\ref{mesures}; they were divided into exterior diameter, inside diameter, rim height, rim width, shape width, rim inside height, rim width 2 and protruding rim.
+
+\begin{figure}[htp]
+	\centering
+\includegraphics[width=\linewidth]{figs/mesures.png}
+\caption{The 8 morphometric measurements taken for all amphorae. A: External diameter. B: Inside diameter. C: Rim height. D: Rim width. E: Shape width. F: Rim inside height. G: Rim width 2. H: Protruding rim}
+\label{mesures}
+\end{figure} 
+
+\subsection{Exploratory Data Analysis}
+
+
+Principal Component Analysis (PCA) was used to explore the variation of measurements over the different workshopd. PCA is a common method in archaeology in scenarios studying within-sample veriation \citep{ shennan_quantifying_1997, li_crossbows_2014, schillinger_differences_2016}. The method allowed us to visualize the dataset by focusing on a small number of Principal Components (PCs) while retaining a majority of the variation which was in essence what we wanted to explore \citep{jolliffe_principal_2002}. 
+
+\subsection{Morphometric similarity} 
+
+Exploratory Data Analysis was followed by the measurement of pairwise dissimilarity between the amphorae made in different workshops. The approach presented here is based on the idea that if most amphorae made in two workshops are difficult to distinguish then the workshops are making similar artifacts; on the other hand if the probability of distinguishing the production place of most amphorae is high then there are remarkable morphometric differences between the objects. This goal could be achieved by 1) training a clustering algorithm with the dataset 2) using the model to predict the workshop of the same dataset and 3) computing a confusion matrix.
+
+The choice of clustering method was Linear Discriminant Analysis (LDA). The entire dataset was used both for the training and prediction steps as we were interested on how well workshop attribution could be predicted relying exclusively on morphometric measures. A Confusion Matrix was then computed as a quantification of the extent to what amphorae of different workshops can be identified. The Confusion Matrix computes this quantity as the number of misclassifications between each pair of groups in the dataset (i.e. the workshops). This method has already been used in similar scenarios aiming at identifying differences in artefact production \citep{charlton_investigating_2012, thorpe_distribution_1984,i_martin_alisis_1998}. If the amphorae made in two workshops were easily confused then their average measures must be similar; on the other hand, if the rate of misclassification between two workshops is very low then the amphorae made in these locations are distinctively different.
+
+The diagonal of the confusion matrix (i.e. correct classifications) was removed and the number of confusions per each workshop was then divided by the total number to get the percentage of errors from a given workshops to the rest of the sample. These values were finally normalized to generate a pairwise distance matrix of morphometric measurements.
+
+\subsection{Dissimilarity correlation}
+
+The last step of this method was the comparison of morphometric and spatial distance matrices.A significant correlation between these dissimilarity matrices would suggest processes of isolation-by-distance typical from vertical transmission \citep{crema_culture_2014}. The evaluation of these two distance matrices (morphometric distance and spatial distance) was computed using a Mantel test. Mantel test evaluates the degree of pairwise correlation between two matrices and has been particularly useful in archaeology to explore the spatial dimension of cultural change \citep{mantel_detection_1967, diniz-filho_mantel_2013, crema_culture_2014}.  
 
 \section{Results}
 
-The morphometric variation was analysed in amphorae production to quantify the technical differences on the pattern production among workshops. 
-The analysis of PCA produces a set of values for each observed variable. Variables show how much variability exist in the dataset grouped by each principal components. The results, indicated in the Table~\ref{table:variable}, show the most differences were focused on the protruding rim. 
+\subsection{Principal Component Analysis}
+
+The loadings for the two main Principal Components of the dataset are listed in Table~\ref{table:pca}
 
 \begin{table}[htp]
+\centering
 \begin{tabular}{lcccccccc}
 \hline
- Variables		&    PC1 & PC2	& PC3 & PC4 & PC5 & PC6 & PC7 & PC8     \\ \hline
- Exterior diameter& 		 &-0.195	&	  &  	&0.281&-0.217&0.369&0.829           \\
- Inside diameter& 		 &		&0.105&-0.414&0.838&	    &-0.257&-0.202           \\
- Rim height&              &      &-0.143&-0.425&-0.242&-0.744&-0.424&           \\
- Rim width&       		 &-0.524	&0.136&  	&	  &-0.342&0.582&-0.497        \\
- Shape width&     		 &-0.170	&-0.920&0.253&0.232&		&     &          \\
- Rim inside&     		 &0.156 &-0.299&-0.750&-0.240&0.345&0.377&          \\                                    
- Rim width 2& 	         &-0.789	&	  &-0.113&-0.219	&0.393&-0.369&0.139          \\	
-Protruding rim& \textbf{0.989} &      &      &     &     &     &     &          \\
+Variables & PC1 & PC2 \\ \hline
+Exterior diameter & 0.877 & 0.312 \\
+Inside diameter & 0.404 & -0.887 \\
+Rim height & - & - \\
+Rim width & 0.149 & 0.119 \\
+Shape width & - & - \\
+Rim inside & - & - \\
+Rim width 2 & 0.133 & 0.142 \\
+Protruding rim & -0.159 & -0.272 \\
 \hline
 \end{tabular}
-\caption{Result of the 8 principal components. Most variability was concentrated in the measurement protruding rim.}
-\label{table:variable}
+\caption{Two main Principal Components. Diameter values and the protruding rim seem to capture the majority of variation.}
+\label{table:pca}
 \end{table}
 
-The patterns observed in the first two Principal Components were plotted to visualize the degree of variation by isolation among workshops. The results suggested that amphorae from closer workshops tend to be more similar than amphorae made in furthest workshops. In particular, the Fig. \ref{pca} illustrates how the four closest workshops show variation on PC1 (i.e. Bel\'en, Las Delicias, Villaseca and Malpica) while Parlamento displays a distinctive pattern than the rest of workshops on PC2 values. 
+A exploratory visualization for these two main Principal Components can be seen in Figure \ref{pca}. The plot suggests that each workshop exhibits slightly different dynamics for PC1 while PC2 is distinctively different for the two most distant sites (Villaseca and Parlamento). Additionally, the first PC also tends to display more similar values for amphorae made in nearby workshops such as Bel\'en and Malpica. 
 
 \begin{figure}[htp]
 	\centering
-\includegraphics[scale=0.47]{pca.png}
-\caption{First and Second Principal Components for the amphorae measurement dataset from the 5 workshops analysed}
+\includegraphics[width=\linewidth]{figs/pca}
+\caption{Scatter and density plot for the First and Second PCs. Sample is split by workshop}
 \label{pca}
 \end{figure} 
 
+\subsection{Linear Discriminant Analysis}
 
-\begin{table}[htp]
-\begin{tabular}{lccc}
-\hline
-      		&  PC1 & PC2	 \\ \hline
-Standard Dev&0.3480758&0.1873301&\\
-Proportion  &0.5747347&0.1664696&\\
-Cumulative  &0.5747347&0.7412043& \\
-
-\end{tabular}
-\caption{Result values from the first two principal components}
-\label{table:spatgeo}
-\end{table}
-
-Discriminant Analysis was used to analyse the results obtained from PCA.  A training dataset used in PCA was analysed assuming the workshops as 5 groups ("belen", "delicias", "malpica", "parlamento" and "villaseca"). For the analysis, a total of 93 samples were correctly classified while 113 were incorrectly classified, as shown the Fig. \ref{prediction}. The results showed a similarity into three groups (Bel\'en, Malpica and Villaseca) while two groups depicted a different pattern (Las Delicias and Parlamento). This could be caused by the geographical proximity, being Parlamento and Las Delicias both workshops with the geographical distance more farther than rest of workshops. 
-
-\begin{figure}[htp]
-	\centering
-\includegraphics[scale=0.35]{prediction.png}
-\caption{Plot with the correct and incorrect predictions result of Discriminant Analysis}
-\label{prediction}
-\end{figure} 
-
-The results of Confusion Matrix proved that workshops with a minor spatial distance such as Malpica and Bel\'en had more troubles of being distinguished due to the similarity in the results obtained (see Table~\ref{table:confusion}). Classification test with the whole dataset gave an accuracy percentage of 50.61\%. Applying this to a training dataset reduced the accuracy to 46.19\%. Therefore, spatial distance could be inversely correlated with making techniques processes of amphorae in the case of \textit{Baetica} area. 
+LDA's prediction generated an accuracy of 56.6\%. For this method the accuracy of the clustering algorithm is not as relevant as the distribution of errors which can be seen in the Confusion Matrix of Table~\ref{table:confusion}.
 
 \begin{table}[htp]
 \begin{tabular}{lccccc}
 \hline
-      & Bel\'en & Delicias & Malpica & Parlamento & Villaseca\\ \hline
-Bel\'en &   31  &      6   &   12    &     11     &   13 \\
-Delicias&  2  &     27   &    6    &     13     &    1  \\
-Malpica &  6  &      4   &   16    &      2     &   13   \\
-Parlamento & 3&      2   &   3     &      14    &    6    \\
-Villaseca  & 0&      3   &    5    &      2     &    9     \\
+      & Belén & Delicias & Malpica & Parlamento & Villaseca\\ \hline
+Belén & 48 & 11 & 16 & 4 & 6 \\
+Delicias & 10 & 81 & 24 & 8 & 0 \\
+Malpica & 12 & 12 & 49 & 1 & 6 \\
+Parlamento & 6 & 10 & 9 & 25 & 10 \\
+Villaseca & 12 & 5 & 13 & 4 & 31 \\
 \hline
 
 \end{tabular}
-\caption{Confusion Matrix with rows pointing out the workshops analysed. The sample analysed gave an accuracy percentage of 46.19 $\%$. Results of P.Value $<$0.01. }
+\caption{Confusion Matrix of errors in predicted classifications between workshops. The sample analysed gave an accuracy percentage of 56.6\% with p-value $<$0.01. }
 \label{table:confusion}
 \end{table}
 
+A temptative glance to these results suggest that workshops with a minor spatial distance such as Malpica, Belén and Las Delicias made amphorae that are more difficult to distinguish due to their similarity. 
 
- We calculated the correlation between spatial distance generated by the Euclidean distance and the distance among amphora measurements, calculated using the Confusion Matrix. The workshops were chosen with different geographical distance in order to prove the correlation between spatial distance and variability of the amphora production techniques. Mantel test indicated results more reasonable (rm= 0.3841; p= 0.025 with 199 permutations). The analysis shows that morphometric distance of the amphorae are strongly correlated with the spatial distance of workshops. Accordingly closer workshops tend to be more similar than the rest: when geographic distance is low, as the example of Bel\'en and Malpica, the morphometric distance seems more similar whereas when distance is higher, as Parlamento, the morphometric distance displays differences with the rest of workshops. Thus, the results suggest that the variability on the making-techniques processes might depend on the spatial distance.   
+\subsection{Mantel correlation test}
 
+Mantel test between morphometric and spatial dissimilarity matrices generated a correlation of $0.51$ with p-value under $0.01$. The analysis shows that morphometric distance of the amphorae are strongly correlated with the spatial distance of workshops. Accordingly closer workshops tend to be more similar than the rest: when geographic distance is low, as the example of Belén and Malpica, the morphometric distance seems more similar whereas when distance is higher, as Parlamento, the morphometric distance displays differences with the rest of workshops. Thus, the results suggest that the variability on the making-techniques processes might depend on the spatial distance.   
 
-%\begin{table}[htp]
-%\begin{tabular}{lccccc}
-%\hline
-%        & Bel\'en   &   Delicias & Malpica & Parlamento & Villaseca\\ \hline
-%Bel\'en   &         &   0.8409091&0.7272727&0.7857143   &0.7169811  \\
-%Delicias&0.8409091&            &0.7522523&0.7023810   &0.8018868   \\
-%Malpica &0.7272727&0.7522523   &         &0.7142857   &0.6509434    \\
-%Parlamento&0.7857143&0.7023810&0.7142857&            &0.7380952     \\
-%Villaseca&0.7169811&0.8018868&0.6509434&0.7380952    &                \\
-%\hline
+\section{Discussion and Concluding remarks}
 
-%\end{tabular}
-%\caption{Results of matrix distance among workshops}
-%\label{table:spatialdistance}
-%\end{table}
+Differences on the making techniques processes among workshops show a variability correlated with spatial distance. The analysed morphometric traits suggest that the similarity between amphorae decreases with the spatial distance between the workshops where they were produced. As a result, amphorae made in nearby workshops share more similar traits than amphorae made in distant workshops where contact was less frequent.
 
-%\begin{figure}[htp]
+%We have observed than rivers courses could have affected in the transmission factors. In the case of the commerce, rivers and its tributaries played an important role for the transport of goods. The huge demand within Roman Empire and the good conditions for the loading and unloading of products \citep{bevan_mediterranean_2014} might have influenced the mode of transmission due to the continuous contact between workshops. 
 
- %\centerin
-%\includegraphics[scale=0.60]{spatgeo.pdf}
-%\caption{Plot with the results of the comparison between morphometric distance (distpottery) and spatial distance (distgeo) in km}
-%\label{spatgeo}
-%\end{figure} 
+The results suggest that vertical transmission could be the main cultural mechanism to explain the variability between workshops. The different morphological traits among workshops seem to reveal low frequency of contact between potters from other workshops. The equilibrium of this dynamic for a long time span (over three centuries) can be interpreted as a high-fidelity social learning mechanism vertically transmitted within each of the workshops. The disciples could have remained working at the same workshops where they were trained. 
 
+Horizontal transmission or high mobility do not seem to match with the results of the analysis. Scenarios with frequent contact between potters or workers moving from workshop to workshop would have generated larger homogeneity in the technical practises with low intensity of isolation-by-distance processes. As a consequence workshops sharing a network of potters would have employed the same production techniques, thus generating similar amphorae. The fact that isolation by distance can be identified suggests limited mobility strictly linked to nearby workshops.
 
-%\begin{table}[htp]
-%\begin{tabular}{llcc}
-%\hline
-% From		& To 		& Morphometric distance	& Geographic distance\\ %\hline
-% Parlamento	& Belen		& 						&  72.45				 \\
-% Parlamento	& Delicias	& 						&  82.01				 \\
- %Parlamento	& Malpica   &                       	&  74.77                      \\
- %Parlamento	& Villaseca	&						&  95.33					\\
- %Belen		& Parlamento &						&  72.45						\\
- %Belen		& Delicias   &						&  22.82      				 \\                                    
- %Belen		& Malpica	&						&  8.73							%\\	
- %Belen		& Villaseca  &                       &  25.23                         \\
- %Delicias	& Parlamento  &                      &  82.01                            \\
- %Delicias	& Belen       &						&  22.82						\\
- %Delicias	& Malpica     &						&  14.19						\\
- %Delicias	& Villaseca   &						&  22.45						\\
- %Malpica		& Parlamento  &						&  74.77						\\
- %Malpica		& Belen       &						&  8.73						\\
- %Malpica		& Delicias    &						&  14.19						\\
- %Malpica    & Villaseca	  &						&  20.97                     \\
- %Villaseca	& Belen       &						&  25.23					     \\Villaseca	& Malpica     &		                 &  20.97			
- %\\
- %Villaseca	& Delicias	  &						&  22.45								\\
- %Villaseca	& Parlamento	  &						&  95.33								\\
-                                                   
-%\hline
+Despiete these results the diversity of social learning processes is always complex. The transmission of technical skills between master and disciples and their limited mobility does not mean that no horizontal transmission process walso played a relevant role. It can be a process where this vertical transmission dominated at first in the same workshops but consequently this transmission would be affected by workers who exchanged ideas or workers moving to other workshops. 
 
-%\end{tabular}
-%\caption{Results with the comparison between morphometric distance and geographic distance (km) }
-%\label{table:spatgeo}
-%\end{table}
-
-
-\section{Discussion and Conclusion}
-
-Differences on the making techniques processes among workshops show a variability correlated with spatial distance. The analysed morphometric traits suggest that the similarity between amphorae decreases with the spatial distance between the workshops where they were produced. As a result, amphorae made in nearby workshops with a minor spatial distance share more traits than amphorae made in pottery workshops farthest. In other words, the variability on the making techniques processes was more difficult to differentiate in nearest workshops. In our case, Malpica and Bel\'en workshops where the geographical proximity is the closest shared more traits in comparison with other workshops (Parlamento and Las Delicias). Thus the probability of interaction between workshops is increasing when the proximity is closest while this likelihood decreases when the possibility of interaction is low. 
-
-We have observed than rivers courses could have affected in the transmission factors. In the case of the commerce, rivers and its tributaries played an important role for the transport of goods. The huge demand within Roman Empire and the good conditions for the loading and unloading of products \citep{bevan_mediterranean_2014} might have influenced the mode of transmission due to the continuous contact between workshops. 
-
-The results also suggest that vertical transmission could be the main cultural mechanism to explain the variability between workshops. The different morphological traits among workshops seem proper of a low contact between potters from other workshops. The evidence confirms therefore that these pottery techniques were transmitted with high fidelity and few changes during three centuries. It would mean that the disciples could have remained the learning techniques in the workshops where they were trained. By contrast, horizontal transmission doesn't seem to be the most probable process. The continuous contact between potters from different places generated a greater homogeneity in the technical practises. As results, workshops were sharing the same production techniques that it would generate a social network where potters within the same generation worked in different workshops at the same time. Our result suggest a progressive contact with closer workshops instead. Moreover, the fact that isolation by distance is detected suggests a limited displacement between distant workshops. Thus, vertical transmission would be explained with this observed process. However, the diversity of social learning processes are clearly complex. In other words, the transmission of technical skills between master and disciple did not discard that horizontal transmission played an important role in this process as well. It can be a process where this vertical transmission dominated at first in the same workshops but consequently this transmission would be affected by workers who exchanged ideas or workers moving to other workshops. 
-
-The combination of empirical analysis with statistical method have provided a strong baseline for a better understanding of the amphora production in the Roman Empire. These methods offer also an alternative complement to other methods as archaeometry for the characterization of production sites and places of consumption. We have identified measurable differences in the techniques by observing and we have tested those particularities using multivariate methods and Mantel test. Our analysis provides a useful guideline for the exploration of the social learning processes related with amphora production in the Roman Empire. Hence, the results have lightened to understand the link between social learning and archaeological evidence in a diversity of scenarios. 
+To conclude, the method presented here provides a framework to identify social learning mechanisms between production centres based on morphometric measurements of artefacts. The method has proven valuable even in the case of the highly standardized amphoric production of the Roman Empire. The suggested method could also offer a good comparison with other analytical methods such as archaeometry; we believe that a framework integrating and comparing multiple sources of evidence could be extremely effective on the process of characterization of production sites and places of consumption. Our analysis provides a useful guideline for the exploration of the social learning processes related with amphora production in the Roman Empire. Hence, the results have lightened to understand the link between social learning and archaeological evidence in a diversity of scenarios. 
 
 \section{Acknowledgments}
 
