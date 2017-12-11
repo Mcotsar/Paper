@@ -41,3 +41,4 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+.directory
