@@ -14,6 +14,7 @@ myData= subset(myData, type %in% c("Dressel C","Dressel D","Dressel E"))
 # keep only the site and the measurements
 myData <- myData[,5:13]
 
+
 ## euclidean distance through river
 river <- read.csv('riverDistances.csv', header=T, sep=",")
 distRiver =as.dist(xtabs(river[, "spatial"] ~ river[, "from"] + river[, "to"]), diag=F)
@@ -34,6 +35,16 @@ values <- data.frame(pc1=pc1, pc2=pc2, site=myData$site)
 
 pdf("pca.pdf", width=6, height=9)
 ggplot(values, aes(x=pc2, y=pc1, col=site)) + geom_density2d(alpha=0.5, linetype="dashed", size=0.5) + geom_point(alpha=0.5) +  facet_wrap(~site,ncol=1) + xlab("PC1") + ylab("PC2") + theme_bw() + theme(legend.position="none")
+dev.off()
+
+#other way to do it faceting per type of dressel 
+#changes before done: update database, change positions)
+#to split by dressel types use ,4:13 with the new database
+
+values <- data.frame(pc1=pc1, pc2=pc2, site=myData$site, type=myData$type)
+
+pdf("testing.pdf", width=6, height=9)
+ggplot(values, aes(x=pc2, y=pc1, col=site)) + geom_point(alpha=0.5) +  facet_wrap(~type,ncol=3) + xlab("PC1") + ylab("PC2") + theme_bw()
 dev.off()
 
 ### 3 - Linear Discriminant Analysis
